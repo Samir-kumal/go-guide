@@ -13,7 +13,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
     <>
       <Sidebar sections={sections} activeSection={activeSection} progress={progress} />
       <ActiveIndicator activeSection={activeSection} sections={sections} />
-      <main className="md:ml-[260px] max-w-[900px] px-10 py-10">
+      <main className="md:ml-[calc(var(--sidebar-w)+20px)] max-w-[900px] px-10 py-10">
         {children}
       </main>
     </>

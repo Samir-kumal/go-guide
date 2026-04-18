@@ -1,4 +1,3 @@
-'use client'
 import { SectionEntry } from '@/lib/sections'
 
 interface Props {
@@ -9,12 +8,12 @@ interface Props {
 
 export function Sidebar({ sections, activeSection, progress }: Props) {
   return (
-    <nav className="fixed left-0 top-0 w-[240px] h-screen bg-[#1a1a2e] text-white p-5 overflow-y-auto shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-[100] hidden md:block">
+    <nav className="fixed left-0 top-0 w-[var(--sidebar-w)] h-screen bg-[#1a1a2e] text-white p-5 overflow-y-auto shadow-[2px_0_10px_rgba(0,0,0,0.1)] z-[100] hidden md:block">
       {/* Progress */}
       <div className="sticky top-0 bg-[#1a1a2e] pb-4 mb-4 border-b border-[#333]">
         <div className="h-1 bg-[#333] rounded overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-[#1a73e8] to-[#00d4aa] transition-[width_0.3s]"
+            className="h-full bg-gradient-to-r from-[#1a73e8] to-[#00d4aa] transition-[width] duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>
