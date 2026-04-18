@@ -1,4 +1,3 @@
-'use client'
 import { useState, useEffect } from 'react'
 
 export function useSidebarScroll(sectionIds: string[]) {
@@ -24,7 +23,7 @@ export function useSidebarScroll(sectionIds: string[]) {
     window.addEventListener('scroll', handleScroll, { passive: true })
     handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [sectionIds])
+  }, [sectionIds.join(',')])
 
   return { activeSection, progress }
 }

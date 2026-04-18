@@ -6,19 +6,21 @@ interface Props {
   language?: string
 }
 
-export function CodeBlock({ children }: Props) {
+export function CodeBlock({ children, language }: Props) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
     navigator.clipboard.writeText(children).then(() => {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
+    }).catch(() => {
+      // clipboard unavailable in non-secure contexts
     })
   }
 
   return (
     <div className="relative my-5">
-      <pre className="bg-[#282c34] text-[#abb2bf] p-5 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-[#282c34] text-[#abb2bf] p-5 rounded-lg overflow-x-auto text-sm" data-language={language}>
         <code>{children}</code>
       </pre>
       <button
