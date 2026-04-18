@@ -9,6 +9,7 @@ import { ErrorHandling } from '@/components/sections/ErrorHandling'
 import { Defer } from '@/components/sections/Defer'
 import { Structs } from '@/components/sections/Structs'
 import { Interfaces } from '@/components/sections/Interfaces'
+import { ConcurrencyDemo } from '@/components/sections/ConcurrencyDemo'
 
 export default function HomePage() {
   return (
@@ -38,6 +39,7 @@ export default function HomePage() {
       <Defer />
       <Structs />
       <Interfaces />
+      <ConcurrencyDemo />
     </>
   )
 }
