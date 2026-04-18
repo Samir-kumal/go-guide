@@ -36,5 +36,7 @@ export const sections: SectionEntry[] = [
   { id: 'testing-in-go', label: '10. Testing', group: null },
   { id: 'modules-and-dependency-management', label: '11. Modules', group: null },
   { id: 'generics-type-parameters', label: '12. Generics', group: null },
+  { id: 'memory-management', label: '13. Memory & GC', group: null },
+  { id: 'advanced-concurrency', label: '14. Adv. Concurrency', group: null },
   { id: 'summary-table', label: 'Summary Table', group: null },
 ]

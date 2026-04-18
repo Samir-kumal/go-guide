@@ -10,6 +10,8 @@ import { SlicesAndMaps } from './major/SlicesAndMaps'
 import { Testing } from './major/Testing'
 import { Modules } from './major/Modules'
 import { Generics } from './major/Generics'
+import { MemoryManagement } from './major/MemoryManagement'
+import { AdvancedConcurrency } from './major/AdvancedConcurrency'
 import { SummaryTable } from './major/SummaryTable'
 
 export function MajorConcepts() {
@@ -30,6 +32,8 @@ export function MajorConcepts() {
       <Testing />
       <Modules />
       <Generics />
+      <MemoryManagement />
+      <AdvancedConcurrency />
       <SummaryTable />
       <hr className="border-none border-t border-[#ddd] my-10" />
     </section>
