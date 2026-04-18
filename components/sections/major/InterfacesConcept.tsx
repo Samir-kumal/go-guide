@@ -1,4 +1,4 @@
-import { CodeBlock, Note } from '@/components/ui'
+import { CodeBlock, Note, DeepDive } from '@/components/ui'
 
 export function InterfacesConcept() {
   return (
@@ -34,6 +34,28 @@ anything = []int{1, 2, 3}`}</CodeBlock>
       <Note>
         <strong>Key:</strong> No &quot;implements&quot; keyword! If your type has the right methods, it implements the interface.
       </Note>
+
+      <DeepDive title="Memory Layout & Postel's Law">
+        <h4 className="font-bold mb-2">Internal Structure: eface vs iface</h4>
+        <p>Under the hood, Go has two types of interfaces:</p>
+        <ul className="list-disc pl-5 my-2">
+          <li><strong>eface (Empty Interface):</strong> Represented as <code className="bg-[#f5f5f5] px-1 px-0.5 rounded font-mono text-sm">interface{}</code>. It stores a pointer to the type information and a pointer to the data.</li>
+          <li><strong>iface (Interface with Methods):</strong> Stores an <code className="bg-[#f5f5f5] px-1 px-0.5 rounded font-mono text-sm">itab</code> (interface table) which maps the interface methods to the concrete type&apos;s implementations.</li>
+        </ul>
+
+        <h4 className="font-bold mt-4 mb-2">"Accept Interfaces, Return Structs"</h4>
+        <p>
+          This is Go&apos;s version of <strong>Postel&apos;s Law</strong> (be conservative in what you send, liberal in what you accept). 
+          By accepting an interface, your function is decoupled from the concrete implementation. 
+          By returning a struct, you provide the caller with maximum information and flexibility without forcing them into a specific contract too early.
+        </p>
+
+        <h4 className="font-bold mt-4 mb-2">The Cost of Boxing</h4>
+        <p>
+          Converting a concrete type to an interface causes <strong>boxing</strong>, which usually leads to a heap allocation. 
+          In high-performance hot paths, "Interface Pollution" (using interfaces where a simple struct would suffice) can be a significant source of GC pressure.
+        </p>
+      </DeepDive>
     </div>
   )
 }
