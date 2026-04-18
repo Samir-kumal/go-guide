@@ -13,6 +13,10 @@ import { ConcurrencyDemo } from '@/components/sections/ConcurrencyDemo'
 import { SqlBasics } from '@/components/sections/SqlBasics'
 import { Sqlc } from '@/components/sections/Sqlc'
 import { Transactions } from '@/components/sections/Transactions'
+import { LearningPath } from '@/components/sections/LearningPath'
+import { Resources } from '@/components/sections/Resources'
+import { EnvironmentValidation } from '@/components/sections/EnvironmentValidation'
+import { HttpHandlerParams } from '@/components/sections/HttpHandlerParams'
 
 export default function HomePage() {
   return (
@@ -46,6 +50,10 @@ export default function HomePage() {
       <SqlBasics />
       <Sqlc />
       <Transactions />
+      <LearningPath />
+      <Resources />
+      <EnvironmentValidation />
+      <HttpHandlerParams />
     </>
   )
 }
