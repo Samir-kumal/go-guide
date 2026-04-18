@@ -10,6 +10,9 @@ import { Defer } from '@/components/sections/Defer'
 import { Structs } from '@/components/sections/Structs'
 import { Interfaces } from '@/components/sections/Interfaces'
 import { ConcurrencyDemo } from '@/components/sections/ConcurrencyDemo'
+import { SqlBasics } from '@/components/sections/SqlBasics'
+import { Sqlc } from '@/components/sections/Sqlc'
+import { Transactions } from '@/components/sections/Transactions'
 
 export default function HomePage() {
   return (
@@ -40,6 +43,9 @@ export default function HomePage() {
       <Structs />
       <Interfaces />
       <ConcurrencyDemo />
+      <SqlBasics />
+      <Sqlc />
+      <Transactions />
     </>
   )
 }
