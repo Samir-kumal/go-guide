@@ -12,6 +12,8 @@ import { Modules } from './major/Modules'
 import { Generics } from './major/Generics'
 import { MemoryManagement } from './major/MemoryManagement'
 import { AdvancedConcurrency } from './major/AdvancedConcurrency'
+import { ProfilingObservability } from './major/ProfilingObservability'
+import { ArchitectureLayout } from './major/ArchitectureLayout'
 import { SummaryTable } from './major/SummaryTable'
 
 export function MajorConcepts() {
@@ -34,6 +36,8 @@ export function MajorConcepts() {
       <Generics />
       <MemoryManagement />
       <AdvancedConcurrency />
+      <ProfilingObservability />
+      <ArchitectureLayout />
       <SummaryTable />
       <hr className="border-none border-t border-[#ddd] my-10" />
     </section>

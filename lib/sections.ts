@@ -38,5 +38,7 @@ export const sections: SectionEntry[] = [
   { id: 'generics-type-parameters', label: '12. Generics', group: null },
   { id: 'memory-management', label: '13. Memory & GC', group: null },
   { id: 'advanced-concurrency', label: '14. Adv. Concurrency', group: null },
+  { id: 'profiling-observability', label: '15. Observability', group: null },
+  { id: 'architecture-layout', label: '16. Architecture', group: null },
   { id: 'summary-table', label: 'Summary Table', group: null },
 ]
