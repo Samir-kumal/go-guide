@@ -39,3 +39,4 @@ body {
 .animate-flow-down { animation: flowDown 1.5s ease-in-out infinite; }
 .animate-async-wave { animation: asyncWave 1s ease-in-out infinite; }
 .animate-blocked { animation: blockedPulse 1.5s ease-in-out infinite; }
+.animate-goroutine-spin { animation: goroutineSpin 2s linear infinite; }
