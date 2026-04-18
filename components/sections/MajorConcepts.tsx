@@ -7,6 +7,9 @@ import { SyncPackage } from './major/SyncPackage'
 import { ContextSection } from './major/ContextSection'
 import { StructsAndTags } from './major/StructsAndTags'
 import { SlicesAndMaps } from './major/SlicesAndMaps'
+import { Testing } from './major/Testing'
+import { Modules } from './major/Modules'
+import { Generics } from './major/Generics'
 import { SummaryTable } from './major/SummaryTable'
 
 export function MajorConcepts() {
@@ -24,6 +27,9 @@ export function MajorConcepts() {
       <ContextSection />
       <StructsAndTags />
       <SlicesAndMaps />
+      <Testing />
+      <Modules />
+      <Generics />
       <SummaryTable />
       <hr className="border-none border-t border-[#ddd] my-10" />
     </section>

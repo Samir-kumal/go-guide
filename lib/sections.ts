@@ -33,5 +33,8 @@ export const sections: SectionEntry[] = [
   { id: 'context-cancellation-and-timeouts', label: '7. Context', group: null },
   { id: 'structs-and-tags', label: '8. Structs and Tags', group: null },
   { id: 'slices-and-maps', label: '9. Slices and Maps', group: null },
+  { id: 'testing-in-go', label: '10. Testing', group: null },
+  { id: 'modules-and-dependency-management', label: '11. Modules', group: null },
+  { id: 'generics-type-parameters', label: '12. Generics', group: null },
   { id: 'summary-table', label: 'Summary Table', group: null },
 ]
