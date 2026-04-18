@@ -1,5 +1,9 @@
 import { QuickComparison } from '@/components/sections/QuickComparison'
 import { CodeBreakdown } from '@/components/sections/CodeBreakdown'
+import { GetLogFile } from '@/components/sections/GetLogFile'
+import { GetLogFileDetailed } from '@/components/sections/GetLogFileDetailed'
+import { IfInitialization } from '@/components/sections/IfInitialization'
+import { WhyNoError } from '@/components/sections/WhyNoError'
 
 export default function HomePage() {
   return (
@@ -20,6 +24,10 @@ export default function HomePage() {
       <hr className="border-none border-t border-[#ddd] my-10" />
       <QuickComparison />
       <CodeBreakdown />
+      <GetLogFile />
+      <GetLogFileDetailed />
+      <IfInitialization />
+      <WhyNoError />
     </>
   )
 }
