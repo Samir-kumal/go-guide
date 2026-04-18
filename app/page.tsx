@@ -1,3 +1,6 @@
+import { QuickComparison } from '@/components/sections/QuickComparison'
+import { CodeBreakdown } from '@/components/sections/CodeBreakdown'
+
 export default function HomePage() {
   return (
     <>
@@ -15,7 +18,8 @@ export default function HomePage() {
         to try code snippets live!
       </blockquote>
       <hr className="border-none border-t border-[#ddd] my-10" />
-      {/* Sections will be added in later tasks */}
+      <QuickComparison />
+      <CodeBreakdown />
     </>
   )
 }
