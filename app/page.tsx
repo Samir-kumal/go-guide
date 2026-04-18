@@ -17,6 +17,7 @@ import { LearningPath } from '@/components/sections/LearningPath'
 import { Resources } from '@/components/sections/Resources'
 import { EnvironmentValidation } from '@/components/sections/EnvironmentValidation'
 import { HttpHandlerParams } from '@/components/sections/HttpHandlerParams'
+import { MajorConcepts } from '@/components/sections/MajorConcepts'
 
 export default function HomePage() {
   return (
@@ -54,6 +55,10 @@ export default function HomePage() {
       <Resources />
       <EnvironmentValidation />
       <HttpHandlerParams />
+      <MajorConcepts />
+      <p className="text-center text-[#666] mt-10">
+        <em>Document created for learning purposes. Happy coding!</em>
+      </p>
     </>
   )
 }
