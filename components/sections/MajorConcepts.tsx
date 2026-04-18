@@ -6,6 +6,7 @@ import { DeferPanicRecover } from './major/DeferPanicRecover'
 import { SyncPackage } from './major/SyncPackage'
 import { ContextSection } from './major/ContextSection'
 import { StructsAndTags } from './major/StructsAndTags'
+import { SlicesAndMaps } from './major/SlicesAndMaps'
 import { SummaryTable } from './major/SummaryTable'
 
 export function MajorConcepts() {
@@ -22,6 +23,7 @@ export function MajorConcepts() {
       <SyncPackage />
       <ContextSection />
       <StructsAndTags />
+      <SlicesAndMaps />
       <SummaryTable />
       <hr className="border-none border-t border-[#ddd] my-10" />
     </section>

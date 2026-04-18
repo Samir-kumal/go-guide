@@ -32,5 +32,6 @@ export const sections: SectionEntry[] = [
   { id: 'sync-package-waiting-for-goroutines', label: '6. Sync Package', group: null },
   { id: 'context-cancellation-and-timeouts', label: '7. Context', group: null },
   { id: 'structs-and-tags', label: '8. Structs and Tags', group: null },
+  { id: 'slices-and-maps', label: '9. Slices and Maps', group: null },
   { id: 'summary-table', label: 'Summary Table', group: null },
 ]
