@@ -4,6 +4,11 @@ import { GetLogFile } from '@/components/sections/GetLogFile'
 import { GetLogFileDetailed } from '@/components/sections/GetLogFileDetailed'
 import { IfInitialization } from '@/components/sections/IfInitialization'
 import { WhyNoError } from '@/components/sections/WhyNoError'
+import { Pointers } from '@/components/sections/Pointers'
+import { ErrorHandling } from '@/components/sections/ErrorHandling'
+import { Defer } from '@/components/sections/Defer'
+import { Structs } from '@/components/sections/Structs'
+import { Interfaces } from '@/components/sections/Interfaces'
 
 export default function HomePage() {
   return (
@@ -28,6 +33,11 @@ export default function HomePage() {
       <GetLogFileDetailed />
       <IfInitialization />
       <WhyNoError />
+      <Pointers />
+      <ErrorHandling />
+      <Defer />
+      <Structs />
+      <Interfaces />
     </>
   )
 }
