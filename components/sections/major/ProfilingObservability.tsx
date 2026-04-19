@@ -51,6 +51,16 @@ func main() {
           In microservices, a single user request might traverse 10 services. 
           Staff engineers use OpenTelemetry (OTel) to propagate a "Trace ID" through headers, allowing you to visualize the entire request lifecycle across the fleet.
         </p>
+
+        <div className="mt-6 p-4 bg-[#f8f9fa] border-l-4 border-[#1a73e8] rounded">
+          <h4 className="font-bold text-[#1a73e8] mb-2">🏢 Industry Case Study: Twitch</h4>
+          <p className="text-sm leading-relaxed">
+            <strong>Twitch:</strong> For their massive video ingestion services, Twitch uses **continuous pprof profiling**. 
+            By analyzing heap profiles in production, they identified "hidden" allocations in high-traffic hot paths—specifically 
+            during JSON encoding. By replacing these frequent allocations with <code className="bg-[#f5f5f5] px-1 px-0.5 rounded font-mono text-sm">sync.Pool</code> to reuse memory buffers, 
+            they achieved significant CPU savings and dramatically reduced GC pressure.
+          </p>
+        </div>
       </DeepDive>
     </div>
   )

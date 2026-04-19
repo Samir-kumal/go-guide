@@ -67,6 +67,16 @@ for _, url := range urls {
 if err := g.Wait(); err != nil {
     return err // handles first error and cleans up others
 }`}</CodeBlock>
+
+        <div className="mt-6 p-4 bg-[#f8f9fa] border-l-4 border-[#1a73e8] rounded">
+          <h4 className="font-bold text-[#1a73e8] mb-2">🏢 Industry Case Study: Uber</h4>
+          <p className="text-sm leading-relaxed">
+            <strong>Uber:</strong> With thousands of Go microservices, Uber heavily relies on bounded **Worker Pools**. 
+            In their transaction services, they use pools to prevent "Goroutine Leaks"—a condition where traffic surges 
+            create thousands of unmanaged goroutines that never finish, leading to OOM crashes. 
+            By enforcing strict bounds on concurrency, they maintain predictable latency even during peak global usage.
+          </p>
+        </div>
       </DeepDive>
     </div>
   )

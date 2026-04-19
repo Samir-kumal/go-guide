@@ -57,6 +57,16 @@ func (s *UserStore) GetUser(...) { ... }`}</CodeBlock>
           Staff engineers avoid creating an interface for every single struct "just in case." 
           <strong>"Only use interfaces when you have at least two concrete implementations"</strong> is a good rule of thumb to avoid unnecessary complexity and boxing allocations.
         </p>
+
+        <div className="mt-6 p-4 bg-[#f8f9fa] border-l-4 border-[#1a73e8] rounded">
+          <h4 className="font-bold text-[#1a73e8] mb-2">🏢 Industry Case Study: Netflix</h4>
+          <p className="text-sm leading-relaxed">
+            <strong>Netflix:</strong> Uses Go for many backend operations and is a major proponent of **Hexagonal Architecture**. 
+            During a migration from a monolith to microservices, they were able to swap an entire data source (from a JSON API to a GraphQL source) 
+            in just <strong>2 hours</strong>. This was only possible because the core business logic was completely decoupled from the infrastructure 
+            via carefully defined Ports (interfaces).
+          </p>
+        </div>
       </DeepDive>
     </div>
   )

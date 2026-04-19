@@ -76,6 +76,20 @@ func Process(data []byte) {
           <li><strong>GOGC:</strong> Percentage of new heap data compared to current data before triggering GC. Default is 100. Lower = more frequent GC.</li>
           <li><strong>GOMEMLIMIT:</strong> (Go 1.19+) Soft memory limit that forces the GC to work harder to stay under a specific budget, preventing OOM crashes in containerized environments.</li>
         </ul>
+
+        <div className="mt-6 p-4 bg-[#f8f9fa] border-l-4 border-[#1a73e8] rounded">
+          <h4 className="font-bold text-[#1a73e8] mb-2">🏢 Industry Case Study: Discord & Cloudflare</h4>
+          <p className="text-sm leading-relaxed">
+            <strong>Discord:</strong> In a famous move, Discord switched their "Read States" service from Go to Rust. Why? 
+            The service had a massive LRU cache, and every 2 minutes Go&apos;s GC would scan the entire heap to see what to free, 
+            causing 100-300ms latency spikes. By switching to a non-GC language like Rust, they eliminated these spikes and reduced memory from 8GB to 0.8GB.
+          </p>
+          <p className="text-sm leading-relaxed mt-2">
+            <strong>Cloudflare:</strong> For a cryptographic service, Cloudflare set <code className="bg-[#f5f5f5] px-1 px-0.5 rounded font-mono text-sm">GOGC=11300</code>. 
+            This allowed the heap to grow significantly larger than default before triggering GC, trading memory for a <strong>22x performance gain</strong> by 
+            massively reducing GC frequency in a high-throughput environment.
+          </p>
+        </div>
       </DeepDive>
     </div>
   )
