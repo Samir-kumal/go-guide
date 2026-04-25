@@ -5,6 +5,9 @@ export function useSidebarScroll(sectionIds: string[]) {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
+    // If no sections on the current page, don't do anything
+    if (sectionIds.length === 0) return
+
     // Progress calculation remains based on scroll
     const handleScroll = () => {
       const docHeight = document.documentElement.scrollHeight - window.innerHeight
@@ -14,7 +17,7 @@ export function useSidebarScroll(sectionIds: string[]) {
     // Intersection Observer for active section tracking
     const observerOptions = {
       root: null,
-      rootMargin: '-10% 0px -80% 0px', // Trigger when section is near top
+      rootMargin: '-10% 0px -80% 0px',
       threshold: 0,
     }
 

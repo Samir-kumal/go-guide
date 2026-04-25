@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { LayoutShell } from '@/components/layout/LayoutShell'
 
 export const metadata: Metadata = {
   title: 'Programming Docs',
@@ -11,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <LayoutShell>{children}</LayoutShell>
+        {children}
       </body>
     </html>
   )

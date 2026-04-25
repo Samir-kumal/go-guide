@@ -2,32 +2,52 @@
   "schema_version": "1.0.0",
   "workspaceRoot": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide",
   "nodes": {
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/[section]/page.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/[section]/page.tsx",
-      "moduleName": "app/go/[section]/page.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/layout.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/layout.tsx",
+      "moduleName": "app/go/layout.tsx",
       "exports": [
-        "generateMetadata",
-        "async"
+        "GoLayout"
       ],
       "imports": [
-        "next/navigation",
-        "next",
-        "@/components/sections/go/${componentName}"
+        "@/lib/sections",
+        "@/components/layout/LayoutShell"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:43:01.739Z"
+      "mtime": "2026-04-25T13:50:23.095Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/page.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/page.tsx",
       "moduleName": "app/go/page.tsx",
       "exports": [
-        "GoHomePage"
+        "GoGuidePage"
       ],
       "imports": [
-        "next/navigation"
+        "@/components/sections/go/QuickComparison",
+        "@/components/sections/go/CodeBreakdown",
+        "@/components/sections/go/EverySingleLineExplained",
+        "@/components/sections/go/SourceCodeRepresentation",
+        "@/components/sections/go/GoLiteralsTypes",
+        "@/components/sections/go/GetLogFile",
+        "@/components/sections/go/GetLogFileDetailed",
+        "@/components/sections/go/IfInitialization",
+        "@/components/sections/go/WhyNoError",
+        "@/components/sections/go/Pointers",
+        "@/components/sections/go/ErrorHandling",
+        "@/components/sections/go/Defer",
+        "@/components/sections/go/Structs",
+        "@/components/sections/go/Interfaces",
+        "@/components/sections/go/ConcurrencyDemo",
+        "@/components/sections/go/SqlBasics",
+        "@/components/sections/go/Sqlc",
+        "@/components/sections/go/Transactions",
+        "@/components/sections/go/LearningPath",
+        "@/components/sections/go/Resources",
+        "@/components/sections/go/EnvironmentValidation",
+        "@/components/sections/go/HttpHandlerParams",
+        "@/components/sections/go/MajorConcepts"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:39:30.974Z"
+      "mtime": "2026-04-25T13:52:23.022Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/[section]/page.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/[section]/page.tsx",
@@ -44,17 +64,51 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:40:05.104Z"
     },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/layout.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/layout.tsx",
+      "moduleName": "app/laravel/layout.tsx",
+      "exports": [
+        "LaravelLayout"
+      ],
+      "imports": [
+        "@/lib/sections",
+        "@/components/layout/LayoutShell"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:55:13.178Z"
+    },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/page.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/page.tsx",
       "moduleName": "app/laravel/page.tsx",
       "exports": [
-        "LaravelHomePage"
+        "LaravelGuidePage"
       ],
       "imports": [
-        "next/navigation"
+        "@/components/sections/laravel/Routing",
+        "@/components/sections/laravel/Controllers",
+        "@/components/sections/laravel/RequestsResponses",
+        "@/components/sections/laravel/Middleware",
+        "@/components/sections/laravel/Sanctum",
+        "@/components/sections/laravel/Validation",
+        "@/components/sections/laravel/ErrorHandling",
+        "@/components/sections/laravel/Testing",
+        "@/components/sections/laravel/SessionsCookies",
+        "@/components/sections/laravel/BladeTemplates",
+        "@/components/sections/laravel/EloquentORM",
+        "@/components/sections/laravel/MigrationsSeeders",
+        "@/components/sections/laravel/FileStorage",
+        "@/components/sections/laravel/Mail",
+        "@/components/sections/laravel/Notifications",
+        "@/components/sections/laravel/Collections",
+        "@/components/sections/laravel/ServiceContainer",
+        "@/components/sections/laravel/QueuesJobs",
+        "@/components/sections/laravel/EventsListeners",
+        "@/components/sections/laravel/TaskScheduling",
+        "@/components/sections/laravel/AuthenticationAuthorization",
+        "@/components/sections/laravel/ArtisanConsole"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:40:04.506Z"
+      "mtime": "2026-04-25T14:06:40.550Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/layout.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/layout.tsx",
@@ -64,11 +118,10 @@
         "RootLayout"
       ],
       "imports": [
-        "./globals.css",
-        "@/components/layout/LayoutShell"
+        "./globals.css"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:41:34.683Z"
+      "mtime": "2026-04-25T13:50:15.640Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/page.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/page.tsx",
@@ -83,32 +136,30 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:41:34.682Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/[section]/page.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/[section]/page.tsx",
-      "moduleName": "app/php/[section]/page.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/layout.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/layout.tsx",
+      "moduleName": "app/php/layout.tsx",
       "exports": [
-        "generateMetadata",
-        "async"
+        "PhpLayout"
       ],
       "imports": [
-        "next/navigation",
-        "next",
-        "@/components/sections/php/${componentName}"
+        "@/lib/sections",
+        "@/components/layout/LayoutShell"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:40:16.068Z"
+      "mtime": "2026-04-25T13:50:30.268Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/page.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/page.tsx",
       "moduleName": "app/php/page.tsx",
       "exports": [
-        "PhpHomePage"
+        "PhpGuidePage"
       ],
       "imports": [
-        "next/navigation"
+        "@/components/sections/php/Basics"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:40:05.284Z"
+      "mtime": "2026-04-25T13:52:30.806Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/docs/LanguageNav.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/docs/LanguageNav.tsx",
@@ -143,12 +194,15 @@
       ],
       "imports": [
         "react",
+        "next/navigation",
         "@/lib/sections",
         "@/hooks/useSidebarScroll",
-        "./Sidebar"
+        "./Sidebar",
+        "@/lib/languages",
+        "next/link"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:44:46.092Z"
+      "mtime": "2026-04-25T13:50:06.955Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/Sidebar.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/Sidebar.tsx",
@@ -158,10 +212,12 @@
       ],
       "imports": [
         "react",
+        "next/link",
+        "next/navigation",
         "@/lib/sections"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:34:57.525Z"
+      "mtime": "2026-04-25T13:52:44.599Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/CodeBreakdown.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/CodeBreakdown.tsx",
@@ -686,15 +742,269 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:39:27.812Z"
     },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/ArtisanConsole.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/ArtisanConsole.tsx",
+      "moduleName": "components/sections/laravel/ArtisanConsole.tsx",
+      "exports": [
+        "ArtisanConsole"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:58:07.765Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/AuthenticationAuthorization.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/AuthenticationAuthorization.tsx",
+      "moduleName": "components/sections/laravel/AuthenticationAuthorization.tsx",
+      "exports": [
+        "AuthenticationAuthorization"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:01:53.765Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/BladeTemplates.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/BladeTemplates.tsx",
+      "moduleName": "components/sections/laravel/BladeTemplates.tsx",
+      "exports": [
+        "BladeTemplates"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:57:28.289Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Collections.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Collections.tsx",
+      "moduleName": "components/sections/laravel/Collections.tsx",
+      "exports": [
+        "Collections"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:01:35.752Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Controllers.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Controllers.tsx",
+      "moduleName": "components/sections/laravel/Controllers.tsx",
+      "exports": [
+        "Controllers"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:57:00.943Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/EloquentORM.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/EloquentORM.tsx",
+      "moduleName": "components/sections/laravel/EloquentORM.tsx",
+      "exports": [
+        "EloquentORM"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:58:07.765Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/ErrorHandling.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/ErrorHandling.tsx",
+      "moduleName": "components/sections/laravel/ErrorHandling.tsx",
+      "exports": [
+        "ErrorHandling"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:59:57.482Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/EventsListeners.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/EventsListeners.tsx",
+      "moduleName": "components/sections/laravel/EventsListeners.tsx",
+      "exports": [
+        "EventsListeners"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:03:26.392Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/FileStorage.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/FileStorage.tsx",
+      "moduleName": "components/sections/laravel/FileStorage.tsx",
+      "exports": [
+        "FileStorage"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:05:44.037Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Mail.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Mail.tsx",
+      "moduleName": "components/sections/laravel/Mail.tsx",
+      "exports": [
+        "Mail"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:05:51.579Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Middleware.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Middleware.tsx",
+      "moduleName": "components/sections/laravel/Middleware.tsx",
+      "exports": [
+        "Middleware"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:59:38.199Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/MigrationsSeeders.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/MigrationsSeeders.tsx",
+      "moduleName": "components/sections/laravel/MigrationsSeeders.tsx",
+      "exports": [
+        "MigrationsSeeders"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:01:44.483Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Notifications.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Notifications.tsx",
+      "moduleName": "components/sections/laravel/Notifications.tsx",
+      "exports": [
+        "Notifications"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:06:01.159Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/QueuesJobs.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/QueuesJobs.tsx",
+      "moduleName": "components/sections/laravel/QueuesJobs.tsx",
+      "exports": [
+        "QueuesJobs"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:02:55.213Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/RequestsResponses.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/RequestsResponses.tsx",
+      "moduleName": "components/sections/laravel/RequestsResponses.tsx",
+      "exports": [
+        "RequestsResponses"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:57:13.755Z"
+    },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Routing.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Routing.tsx",
       "moduleName": "components/sections/laravel/Routing.tsx",
       "exports": [
         "Routing"
       ],
-      "imports": [],
+      "imports": [
+        "@/components/ui"
+      ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:40:05.110Z"
+      "mtime": "2026-04-25T14:06:40.976Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Sanctum.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Sanctum.tsx",
+      "moduleName": "components/sections/laravel/Sanctum.tsx",
+      "exports": [
+        "Sanctum"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:05:35.481Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/ServiceContainer.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/ServiceContainer.tsx",
+      "moduleName": "components/sections/laravel/ServiceContainer.tsx",
+      "exports": [
+        "ServiceContainer"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:02:46.611Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/SessionsCookies.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/SessionsCookies.tsx",
+      "moduleName": "components/sections/laravel/SessionsCookies.tsx",
+      "exports": [
+        "SessionsCookies"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:00:07.937Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/TaskScheduling.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/TaskScheduling.tsx",
+      "moduleName": "components/sections/laravel/TaskScheduling.tsx",
+      "exports": [
+        "TaskScheduling"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:03:34.428Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Testing.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Testing.tsx",
+      "moduleName": "components/sections/laravel/Testing.tsx",
+      "exports": [
+        "Testing"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T14:06:16.511Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Validation.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Validation.tsx",
+      "moduleName": "components/sections/laravel/Validation.tsx",
+      "exports": [
+        "Validation"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:59:47.941Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/php/Basics.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/php/Basics.tsx",
@@ -702,9 +1012,11 @@
       "exports": [
         "Basics"
       ],
-      "imports": [],
+      "imports": [
+        "@/components/ui"
+      ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:40:19.972Z"
+      "mtime": "2026-04-25T14:06:31.484Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/CodeBlock.test.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/CodeBlock.test.tsx",
@@ -830,7 +1142,7 @@
         "react"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:25:58.565Z"
+      "mtime": "2026-04-25T13:50:39.367Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/content-loader.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/content-loader.ts",
@@ -858,7 +1170,7 @@
       ],
       "imports": [],
       "language": "typescript",
-      "mtime": "2026-04-25T13:38:46.409Z"
+      "mtime": "2026-04-25T13:49:37.728Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/sections.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/sections.ts",
@@ -873,7 +1185,7 @@
       ],
       "imports": [],
       "language": "typescript",
-      "mtime": "2026-04-25T13:44:21.110Z"
+      "mtime": "2026-04-25T14:06:28.891Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/middleware.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/middleware.ts",
@@ -1144,9 +1456,9 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-25T13:44:46.105Z",
+    "generatedAt": "2026-04-25T14:06:40.989Z",
     "generator": "repo-graph",
-    "nodeCount": 75,
+    "nodeCount": 97,
     "edgeCount": 33
   }
 }

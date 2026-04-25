@@ -46,7 +46,7 @@ h3 {
   color: var(--text-muted);
 }
 
-code {
+:not(pre) > code {
   background-color: var(--bg-code);
   padding: 0.125rem 0.375rem;
   border-radius: 0.25rem;

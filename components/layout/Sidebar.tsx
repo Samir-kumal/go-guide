@@ -1,5 +1,7 @@
 'use client'
 import { useRef, useEffect, useState } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { SectionEntry } from '@/lib/sections'
 
 interface Props {
@@ -13,14 +15,13 @@ interface Props {
 export function Sidebar({ sections, activeSection, progress, isOpen, onClose }: Props) {
   const [indicatorStyle, setIndicatorStyle] = useState({ top: 0, height: 0, opacity: 0 })
   const navRef = useRef<HTMLUListElement>(null)
+  const pathname = usePathname()
 
   useEffect(() => {
-    if (!activeSection) {
-      setIndicatorStyle((s) => ({ ...s, opacity: 0 }))
-      return
-    }
-
-    const activeLink = navRef.current?.querySelector(`a[href="${activeSection}"]`)
+    // In long-scroll, the active section comes from the IntersectionObserver (activeSection prop)
+    const activeId = activeSection.startsWith('#') ? activeSection.slice(1) : activeSection
+    const activeLink = navRef.current?.querySelector(`a[href$="#${activeId}"]`)
+    
     if (activeLink) {
       const parentRect = navRef.current?.getBoundingClientRect()
       const linkRect = activeLink.getBoundingClientRect()
@@ -32,6 +33,8 @@ export function Sidebar({ sections, activeSection, progress, isOpen, onClose }: 
           opacity: 1,
         })
       }
+    } else {
+      setIndicatorStyle((s) => ({ ...s, opacity: 0 }))
     }
   }, [activeSection, sections])
 
@@ -96,27 +99,34 @@ export function Sidebar({ sections, activeSection, progress, isOpen, onClose }: 
           />
 
           <ul ref={navRef} className="list-none p-0 m-0 relative">
-            {sections.map((section) => (
-              <li key={section.id} className="my-1">
-                {section.group && (
-                  <div className="text-[11px] uppercase text-[#666] tracking-widest mt-4 pl-4 mb-1">
-                    {section.group}
-                  </div>
-                )}
-                <a
-                  href={`#${section.id}`}
-                  onClick={onClose}
-                  className={`block px-4 py-2.5 text-[13px] rounded-md border-l-[3px] transition-all no-underline ${
-                    activeSection === `#${section.id}`
-                      ? 'bg-[rgba(26,115,232,0.2)] text-[#1a73e8] border-l-[#1a73e8]'
-                      : 'text-[#c0c0c0] border-l-transparent hover:bg-white/10 hover:text-white'
-                  }`}
-                >
-                  {activeSection === `#${section.id}` && <span className="mr-2" aria-hidden="true">📍</span>}
-                  {section.label}
-                </a>
-              </li>
-            ))}
+            {sections.map((section) => {
+              const langPath = `/${section.lang}`
+              const isSameLang = pathname === langPath
+              const href = isSameLang ? `#${section.id}` : `${langPath}#${section.id}`
+              const isActive = activeSection === `#${section.id}`
+
+              return (
+                <li key={section.id} className="my-1">
+                  {section.group && (
+                    <div className="text-[11px] uppercase text-[#666] tracking-widest mt-4 pl-4 mb-1">
+                      {section.group}
+                    </div>
+                  )}
+                  <Link
+                    href={href}
+                    onClick={onClose}
+                    className={`block px-4 py-2.5 text-[13px] rounded-md border-l-[3px] transition-all no-underline ${
+                      isActive
+                        ? 'bg-[rgba(26,115,232,0.2)] text-[#1a73e8] border-l-[#1a73e8]'
+                        : 'text-[#c0c0c0] border-l-transparent hover:bg-white/10 hover:text-white'
+                    }`}
+                  >
+                    {isActive && <span className="mr-2" aria-hidden="true">📍</span>}
+                    {section.label}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </nav>
