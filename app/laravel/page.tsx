@@ -4,7 +4,7 @@ import { RequestsResponses } from '@/components/sections/laravel/RequestsRespons
 import { Middleware } from '@/components/sections/laravel/Middleware'
 import { Sanctum } from '@/components/sections/laravel/Sanctum'
 import { Validation } from '@/components/sections/laravel/Validation'
-import { ErrorHandling } from '@/components/sections/laravel/ErrorHandling'
+import { ErrorHandlingTutorial } from '@/components/sections/laravel/ErrorHandling'
 import { Testing } from '@/components/sections/laravel/Testing'
 import { SessionsCookies } from '@/components/sections/laravel/SessionsCookies'
 import { BladeTemplates } from '@/components/sections/laravel/BladeTemplates'
@@ -44,7 +44,7 @@ export default function LaravelGuidePage() {
       <Middleware />
       <Sanctum />
       <Validation />
-      <ErrorHandling />
+      <ErrorHandlingTutorial />
       <Testing />
       <SessionsCookies />
       <BladeTemplates />
