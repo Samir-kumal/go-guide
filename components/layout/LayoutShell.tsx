@@ -7,6 +7,7 @@ import { Sidebar } from './Sidebar'
 import { ThemeToggle } from './ThemeToggle'
 import { getLanguage } from '@/lib/languages'
 import Link from 'next/link'
+import { GoPlayground, PlaygroundButton } from '@/components/ui'
 
 interface Props {
   children: React.ReactNode
@@ -16,11 +17,13 @@ interface Props {
 
 export function LayoutShell({ children, sections, langId }: Props) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isPlaygroundOpen, setIsPlaygroundOpen] = useState(false)
   const pathname = usePathname()
   const lang = getLanguage(langId)
 
   const sectionIds = useMemo(() => sections.map((s) => s.id), [sections])
   const { activeSection, progress } = useSidebarScroll(sectionIds)
+  const showPlayground = pathname.startsWith('/go')
 
   return (
     <div className="min-h-screen bg-[var(--bg-page)] transition-colors duration-300">
@@ -77,6 +80,15 @@ export function LayoutShell({ children, sections, langId }: Props) {
           </div>
         </main>
       </div>
+
+      {showPlayground && (
+        <PlaygroundButton onClick={() => setIsPlaygroundOpen(true)} />
+      )}
+
+      <GoPlayground
+        isOpen={isPlaygroundOpen}
+        onClose={() => setIsPlaygroundOpen(false)}
+      />
     </div>
   )
 }
