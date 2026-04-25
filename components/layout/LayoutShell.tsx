@@ -5,7 +5,6 @@ import { SectionEntry } from '@/lib/sections'
 import { useSidebarScroll } from '@/hooks/useSidebarScroll'
 import { Sidebar } from './Sidebar'
 import { ThemeToggle } from './ThemeToggle'
-import { getLanguage } from '@/lib/languages'
 import Link from 'next/link'
 import { GoPlayground, PlaygroundButton } from '@/components/ui'
 
@@ -15,15 +14,14 @@ interface Props {
   langId: string
 }
 
-export function LayoutShell({ children, sections, langId }: Props) {
+export function LayoutShell({ children, sections }: Props) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const [isPlaygroundOpen, setIsPlaygroundOpen] = useState(false)
   const pathname = usePathname()
-  const lang = getLanguage(langId)
 
   const sectionIds = useMemo(() => sections.map((s) => s.id), [sections])
   const { activeSection, progress } = useSidebarScroll(sectionIds)
-  const showPlayground = pathname.startsWith('/go')
+  const showPlayground = pathname === '/go' || pathname.startsWith('/go/')
 
   return (
     <div className="min-h-screen bg-[var(--bg-page)] transition-colors duration-300">
