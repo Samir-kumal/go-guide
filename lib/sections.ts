@@ -108,7 +108,7 @@ export const laravelSections: SectionEntry[] = [
   { id: 'events-listeners', label: 'Events & Listeners', group: null, lang: 'laravel' },
   { id: 'task-scheduling', label: 'Task Scheduling', group: null, lang: 'laravel' },
   { id: 'horizon', label: 'Laravel Horizon (Dashboard)', group: null, lang: 'laravel' },
-  { id: 'pulse', label: 'Laravel Pulse', group: '📊 Ecosystem', lang: 'laravel' },
+  { id: 'pulse-tutorial', label: 'Laravel Pulse', group: '📊 Ecosystem', lang: 'laravel' },
   { id: 'nova', label: 'Laravel Nova', group: null, lang: 'laravel' },
   { id: 'authentication-authorization', label: 'Authentication', group: '🔒 Security', lang: 'laravel' },
   { id: 'gates-policies', label: 'Gates & Policies', group: null, lang: 'laravel' },

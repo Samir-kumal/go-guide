@@ -188,3 +188,332 @@
 {"timestamp":"2026-04-25T14:09:01.805Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
 {"timestamp":"2026-04-25T14:09:01.805Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
 {"timestamp":"2026-04-25T14:09:01.950Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:20:48.853Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:20:49.004Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:21:50.421Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:21:50.552Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:22:03.061Z","event":"session_started","sessionId":"ses_23afb2597ffem1luPVJyjUi18f","agentName":"coder"}
+{"timestamp":"2026-04-25T14:22:03.061Z","event":"delegation_begin","sessionId":"ses_23afb2597ffem1luPVJyjUi18f","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:22:03.124Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:23:29.198Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:25:08.373Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:26:04.826Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:26:48.855Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:27:25.881Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:27:57.133Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:28:30.022Z","event":"heartbeat","sessionId":"ses_23afb2597ffem1luPVJyjUi18f"}
+{"timestamp":"2026-04-25T14:28:40.656Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T14:28:40.656Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:28:41.209Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:29:33.532Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T14:29:33.532Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:29:33.651Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:29:42.559Z","event":"session_started","sessionId":"ses_23af422acffex781MXoJgktfYb","agentName":"coder"}
+{"timestamp":"2026-04-25T14:29:42.559Z","event":"delegation_begin","sessionId":"ses_23af422acffex781MXoJgktfYb","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:29:42.629Z","event":"heartbeat","sessionId":"ses_23af422acffex781MXoJgktfYb"}
+{"timestamp":"2026-04-25T14:32:07.223Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T14:32:07.223Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:32:07.843Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:32:39.866Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:32:49.705Z","event":"session_started","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG","agentName":"coder"}
+{"timestamp":"2026-04-25T14:32:49.705Z","event":"delegation_begin","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:32:49.775Z","event":"heartbeat","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG"}
+{"timestamp":"2026-04-25T14:33:33.464Z","event":"heartbeat","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG"}
+{"timestamp":"2026-04-25T14:33:47.007Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:33:47.716Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:34:01.978Z","event":"delegation_begin","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:34:04.327Z","event":"heartbeat","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG"}
+{"timestamp":"2026-04-25T14:34:36.023Z","event":"heartbeat","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG"}
+{"timestamp":"2026-04-25T14:35:07.421Z","event":"heartbeat","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG"}
+{"timestamp":"2026-04-25T14:35:43.601Z","event":"heartbeat","sessionId":"ses_23af147a4ffeYHjaeNRAMzwCnG"}
+{"timestamp":"2026-04-25T14:36:13.379Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:36:14.153Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:40:14.805Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T14:40:14.805Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:40:14.949Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:40:25.856Z","event":"session_started","sessionId":"ses_23aea51d1ffe7m22S6fZk6WvPq","agentName":"coder"}
+{"timestamp":"2026-04-25T14:40:25.856Z","event":"delegation_begin","sessionId":"ses_23aea51d1ffe7m22S6fZk6WvPq","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:40:25.963Z","event":"heartbeat","sessionId":"ses_23aea51d1ffe7m22S6fZk6WvPq"}
+{"timestamp":"2026-04-25T14:40:56.498Z","event":"heartbeat","sessionId":"ses_23aea51d1ffe7m22S6fZk6WvPq"}
+{"timestamp":"2026-04-25T14:42:04.344Z","event":"heartbeat","sessionId":"ses_23aea51d1ffe7m22S6fZk6WvPq"}
+{"timestamp":"2026-04-25T14:42:23.746Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/build/evidence.json","agent":"evidence-manager","taskId":"build","attempt":0}
+{"timestamp":"2026-04-25T14:42:31.475Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T14:42:31.475Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:42:32.294Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:43:13.925Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:47:18.595Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T14:47:18.595Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:47:18.732Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:47:28.257Z","event":"session_started","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs","agentName":"coder"}
+{"timestamp":"2026-04-25T14:47:28.257Z","event":"delegation_begin","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:47:28.327Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:49:10.799Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:49:48.621Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:50:33.025Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:51:08.022Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:51:38.039Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:52:12.741Z","event":"heartbeat","sessionId":"ses_23ae3dfcdffecQ7Kb8rZ0pbYbs"}
+{"timestamp":"2026-04-25T14:52:43.284Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T14:52:43.284Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:52:44.164Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:53:20.088Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:55:16.257Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T14:55:16.257Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:55:16.397Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:55:21.862Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:55:39.571Z","event":"session_started","sessionId":"ses_23adc609bffeAJJQDokmonaMcP","agentName":"coder"}
+{"timestamp":"2026-04-25T14:55:39.571Z","event":"delegation_begin","sessionId":"ses_23adc609bffeAJJQDokmonaMcP","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:55:39.643Z","event":"heartbeat","sessionId":"ses_23adc609bffeAJJQDokmonaMcP"}
+{"timestamp":"2026-04-25T14:56:22.044Z","event":"heartbeat","sessionId":"ses_23adc609bffeAJJQDokmonaMcP"}
+{"timestamp":"2026-04-25T14:58:34.262Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T14:58:34.262Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T14:58:34.830Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:59:12.626Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T14:59:37.940Z","event":"session_started","sessionId":"ses_23ad8bd79ffepek0N6TT7hapyZ","agentName":"coder"}
+{"timestamp":"2026-04-25T14:59:37.940Z","event":"delegation_begin","sessionId":"ses_23ad8bd79ffepek0N6TT7hapyZ","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T14:59:38.014Z","event":"heartbeat","sessionId":"ses_23ad8bd79ffepek0N6TT7hapyZ"}
+{"timestamp":"2026-04-25T15:01:58.259Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:01:58.886Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:02:29.179Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:03:48.191Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T15:03:48.191Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:03:48.348Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:03:56.668Z","event":"session_started","sessionId":"ses_23ad4cad2ffe2YNa9QTYUaR56W","agentName":"coder"}
+{"timestamp":"2026-04-25T15:03:56.668Z","event":"delegation_begin","sessionId":"ses_23ad4cad2ffe2YNa9QTYUaR56W","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:03:56.740Z","event":"heartbeat","sessionId":"ses_23ad4cad2ffe2YNa9QTYUaR56W"}
+{"timestamp":"2026-04-25T15:06:21.106Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T15:06:21.106Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:06:21.845Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:06:53.053Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:10:13.293Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T15:10:13.293Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:10:13.442Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:10:17.168Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:10:26.848Z","event":"session_started","sessionId":"ses_23aced6aeffe23q3hzZlIqkrZr","agentName":"coder"}
+{"timestamp":"2026-04-25T15:10:26.848Z","event":"delegation_begin","sessionId":"ses_23aced6aeffe23q3hzZlIqkrZr","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:10:26.919Z","event":"heartbeat","sessionId":"ses_23aced6aeffe23q3hzZlIqkrZr"}
+{"timestamp":"2026-04-25T15:10:29.194Z","event":"session_started","sessionId":"ses_23acecd84ffeHOZWrj0loYr1jb","agentName":"coder"}
+{"timestamp":"2026-04-25T15:10:29.194Z","event":"delegation_begin","sessionId":"ses_23acecd84ffeHOZWrj0loYr1jb","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:10:29.259Z","event":"heartbeat","sessionId":"ses_23acecd84ffeHOZWrj0loYr1jb"}
+{"timestamp":"2026-04-25T15:10:29.293Z","event":"session_started","sessionId":"ses_23acecd1cffeERU38H9qRBAyVW","agentName":"coder"}
+{"timestamp":"2026-04-25T15:10:29.293Z","event":"delegation_begin","sessionId":"ses_23acecd1cffeERU38H9qRBAyVW","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:10:29.352Z","event":"heartbeat","sessionId":"ses_23acecd1cffeERU38H9qRBAyVW"}
+{"timestamp":"2026-04-25T15:10:59.526Z","event":"heartbeat","sessionId":"ses_23acecd1cffeERU38H9qRBAyVW"}
+{"timestamp":"2026-04-25T15:11:16.457Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T15:11:16.457Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:11:28.723Z","event":"heartbeat","sessionId":"ses_23acecd84ffeHOZWrj0loYr1jb"}
+{"timestamp":"2026-04-25T15:11:43.471Z","event":"heartbeat","sessionId":"ses_23aced6aeffe23q3hzZlIqkrZr"}
+{"timestamp":"2026-04-25T15:11:59.373Z","event":"heartbeat","sessionId":"ses_23acecd84ffeHOZWrj0loYr1jb"}
+{"timestamp":"2026-04-25T15:12:02.175Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/syntax_check/evidence.json","agent":"evidence-manager","taskId":"syntax_check","attempt":0}
+{"timestamp":"2026-04-25T15:12:14.467Z","event":"heartbeat","sessionId":"ses_23aced6aeffe23q3hzZlIqkrZr"}
+{"timestamp":"2026-04-25T15:12:30.004Z","event":"heartbeat","sessionId":"ses_23acecd84ffeHOZWrj0loYr1jb"}
+{"timestamp":"2026-04-25T15:12:33.141Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:12:46.585Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:12:47.428Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:13:16.120Z","event":"session_started","sessionId":"ses_23acc4176ffeVsws0eheRevu4U","agentName":"coder"}
+{"timestamp":"2026-04-25T15:13:16.120Z","event":"delegation_begin","sessionId":"ses_23acc4176ffeVsws0eheRevu4U","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:13:16.198Z","event":"heartbeat","sessionId":"ses_23acc4176ffeVsws0eheRevu4U"}
+{"timestamp":"2026-04-25T15:14:11.653Z","event":"heartbeat","sessionId":"ses_23acc4176ffeVsws0eheRevu4U"}
+{"timestamp":"2026-04-25T15:15:16.229Z","event":"heartbeat","sessionId":"ses_23acc4176ffeVsws0eheRevu4U"}
+{"timestamp":"2026-04-25T15:16:42.402Z","event":"heartbeat","sessionId":"ses_23acc4176ffeVsws0eheRevu4U"}
+{"timestamp":"2026-04-25T15:17:18.308Z","event":"heartbeat","sessionId":"ses_23acc4176ffeVsws0eheRevu4U"}
+{"timestamp":"2026-04-25T15:18:34.729Z","event":"heartbeat","sessionId":"ses_23acc4176ffeVsws0eheRevu4U"}
+{"timestamp":"2026-04-25T15:18:51.391Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:18:52.251Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:19:00.249Z","event":"session_started","sessionId":"ses_23ac70137ffeiQs47QlwnIpAdE","agentName":"coder"}
+{"timestamp":"2026-04-25T15:19:00.249Z","event":"delegation_begin","sessionId":"ses_23ac70137ffeiQs47QlwnIpAdE","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:19:00.325Z","event":"heartbeat","sessionId":"ses_23ac70137ffeiQs47QlwnIpAdE"}
+{"timestamp":"2026-04-25T15:19:34.843Z","event":"heartbeat","sessionId":"ses_23ac70137ffeiQs47QlwnIpAdE"}
+{"timestamp":"2026-04-25T15:20:08.093Z","event":"heartbeat","sessionId":"ses_23ac70137ffeiQs47QlwnIpAdE"}
+{"timestamp":"2026-04-25T15:20:27.608Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:20:28.467Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:20:52.019Z","event":"session_started","sessionId":"ses_23ac54c9bffeIfN1fh7jYwv3vj","agentName":"coder"}
+{"timestamp":"2026-04-25T15:20:52.019Z","event":"delegation_begin","sessionId":"ses_23ac54c9bffeIfN1fh7jYwv3vj","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:20:52.090Z","event":"heartbeat","sessionId":"ses_23ac54c9bffeIfN1fh7jYwv3vj"}
+{"timestamp":"2026-04-25T15:23:09.653Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:23:10.530Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:23:43.797Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:24:03.133Z","event":"session_started","sessionId":"ses_23ac2620effeiUvo8UFi6Jr4td","agentName":"coder"}
+{"timestamp":"2026-04-25T15:24:03.133Z","event":"delegation_begin","sessionId":"ses_23ac2620effeiUvo8UFi6Jr4td","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:24:03.194Z","event":"heartbeat","sessionId":"ses_23ac2620effeiUvo8UFi6Jr4td"}
+{"timestamp":"2026-04-25T15:24:35.232Z","event":"heartbeat","sessionId":"ses_23ac2620effeiUvo8UFi6Jr4td"}
+{"timestamp":"2026-04-25T15:25:09.933Z","event":"heartbeat","sessionId":"ses_23ac2620effeiUvo8UFi6Jr4td"}
+{"timestamp":"2026-04-25T15:25:14.328Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:25:14.619Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:25:44.263Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T15:25:44.263Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:25:51.626Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:26:33.531Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:26:33.658Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:26:56.025Z","event":"session_started","sessionId":"ses_23abfbeb3ffedXPlTOHCL6Zcr6","agentName":"coder"}
+{"timestamp":"2026-04-25T15:26:56.025Z","event":"delegation_begin","sessionId":"ses_23abfbeb3ffedXPlTOHCL6Zcr6","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:26:56.090Z","event":"heartbeat","sessionId":"ses_23abfbeb3ffedXPlTOHCL6Zcr6"}
+{"timestamp":"2026-04-25T15:29:13.329Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T15:29:13.330Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:29:13.710Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:29:30.290Z","event":"delegation_begin","sessionId":"ses_23abfbeb3ffedXPlTOHCL6Zcr6","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:29:30.370Z","event":"heartbeat","sessionId":"ses_23abfbeb3ffedXPlTOHCL6Zcr6"}
+{"timestamp":"2026-04-25T15:31:37.945Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:31:38.355Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:32:15.280Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:32:47.638Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:33:02.748Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T15:33:02.748Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:33:23.767Z","event":"session_started","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa","agentName":"coder"}
+{"timestamp":"2026-04-25T15:33:23.767Z","event":"delegation_begin","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:33:23.839Z","event":"heartbeat","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa"}
+{"timestamp":"2026-04-25T15:35:40.829Z","event":"heartbeat","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa"}
+{"timestamp":"2026-04-25T15:36:13.113Z","event":"heartbeat","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa"}
+{"timestamp":"2026-04-25T15:36:50.973Z","event":"heartbeat","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa"}
+{"timestamp":"2026-04-25T15:37:28.692Z","event":"heartbeat","sessionId":"ses_23ab9d417ffeuhS3Rgf6TBn8Pa"}
+{"timestamp":"2026-04-25T15:37:49.700Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T15:37:49.700Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:37:50.319Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:37:56.523Z","event":"session_started","sessionId":"ses_23ab5aaa3ffewSR9PCl1Kf5Dya","agentName":"coder"}
+{"timestamp":"2026-04-25T15:37:56.523Z","event":"delegation_begin","sessionId":"ses_23ab5aaa3ffewSR9PCl1Kf5Dya","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:37:56.596Z","event":"heartbeat","sessionId":"ses_23ab5aaa3ffewSR9PCl1Kf5Dya"}
+{"timestamp":"2026-04-25T15:37:58.177Z","event":"session_started","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo","agentName":"coder"}
+{"timestamp":"2026-04-25T15:37:58.177Z","event":"delegation_begin","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:37:58.245Z","event":"heartbeat","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo"}
+{"timestamp":"2026-04-25T15:37:59.928Z","event":"session_started","sessionId":"ses_23ab59d56ffeq8rpZqKRbILaNq","agentName":"coder"}
+{"timestamp":"2026-04-25T15:37:59.928Z","event":"delegation_begin","sessionId":"ses_23ab59d56ffeq8rpZqKRbILaNq","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:37:59.933Z","event":"session_started","sessionId":"ses_23ab59d53ffe4ozEH6bH5iofFK","agentName":"coder"}
+{"timestamp":"2026-04-25T15:37:59.933Z","event":"delegation_begin","sessionId":"ses_23ab59d53ffe4ozEH6bH5iofFK","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:37:59.992Z","event":"heartbeat","sessionId":"ses_23ab59d56ffeq8rpZqKRbILaNq"}
+{"timestamp":"2026-04-25T15:38:00.042Z","event":"heartbeat","sessionId":"ses_23ab59d53ffe4ozEH6bH5iofFK"}
+{"timestamp":"2026-04-25T15:38:58.031Z","event":"heartbeat","sessionId":"ses_23ab59d53ffe4ozEH6bH5iofFK"}
+{"timestamp":"2026-04-25T15:39:11.707Z","event":"heartbeat","sessionId":"ses_23ab5aaa3ffewSR9PCl1Kf5Dya"}
+{"timestamp":"2026-04-25T15:39:19.582Z","event":"heartbeat","sessionId":"ses_23ab59d56ffeq8rpZqKRbILaNq"}
+{"timestamp":"2026-04-25T15:39:37.647Z","event":"heartbeat","sessionId":"ses_23ab59d53ffe4ozEH6bH5iofFK"}
+{"timestamp":"2026-04-25T15:39:40.147Z","event":"heartbeat","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo"}
+{"timestamp":"2026-04-25T15:39:44.185Z","event":"heartbeat","sessionId":"ses_23ab5aaa3ffewSR9PCl1Kf5Dya"}
+{"timestamp":"2026-04-25T15:39:49.275Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:39:49.841Z","event":"heartbeat","sessionId":"ses_23ab59d56ffeq8rpZqKRbILaNq"}
+{"timestamp":"2026-04-25T15:39:56.307Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:40:12.175Z","event":"heartbeat","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo"}
+{"timestamp":"2026-04-25T15:40:48.358Z","event":"heartbeat","sessionId":"ses_23ab5aaa3ffewSR9PCl1Kf5Dya"}
+{"timestamp":"2026-04-25T15:40:49.531Z","event":"heartbeat","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo"}
+{"timestamp":"2026-04-25T15:41:14.338Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:41:23.484Z","event":"heartbeat","sessionId":"ses_23ab5a42cffeEnEfrxEoJHgIDo"}
+{"timestamp":"2026-04-25T15:41:37.984Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:41:38.679Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:42:07.813Z","event":"session_started","sessionId":"ses_23ab1d50affefs6HU2zGkSlbH4","agentName":"coder"}
+{"timestamp":"2026-04-25T15:42:07.813Z","event":"delegation_begin","sessionId":"ses_23ab1d50affefs6HU2zGkSlbH4","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:42:07.889Z","event":"heartbeat","sessionId":"ses_23ab1d50affefs6HU2zGkSlbH4"}
+{"timestamp":"2026-04-25T15:42:10.327Z","event":"session_started","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg","agentName":"coder"}
+{"timestamp":"2026-04-25T15:42:10.327Z","event":"delegation_begin","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:42:10.390Z","event":"heartbeat","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg"}
+{"timestamp":"2026-04-25T15:42:12.292Z","event":"session_started","sessionId":"ses_23ab1c38cffeXLyKK5daXRi8CY","agentName":"coder"}
+{"timestamp":"2026-04-25T15:42:12.292Z","event":"delegation_begin","sessionId":"ses_23ab1c38cffeXLyKK5daXRi8CY","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:42:12.357Z","event":"heartbeat","sessionId":"ses_23ab1c38cffeXLyKK5daXRi8CY"}
+{"timestamp":"2026-04-25T15:42:12.436Z","event":"session_started","sessionId":"ses_23ab1c2f5ffeIWJAN9MdK6fDrq","agentName":"coder"}
+{"timestamp":"2026-04-25T15:42:12.436Z","event":"delegation_begin","sessionId":"ses_23ab1c2f5ffeIWJAN9MdK6fDrq","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:42:12.522Z","event":"heartbeat","sessionId":"ses_23ab1c2f5ffeIWJAN9MdK6fDrq"}
+{"timestamp":"2026-04-25T15:42:46.093Z","event":"heartbeat","sessionId":"ses_23ab1c2f5ffeIWJAN9MdK6fDrq"}
+{"timestamp":"2026-04-25T15:42:48.900Z","event":"heartbeat","sessionId":"ses_23ab1c38cffeXLyKK5daXRi8CY"}
+{"timestamp":"2026-04-25T15:43:19.693Z","event":"heartbeat","sessionId":"ses_23ab1d50affefs6HU2zGkSlbH4"}
+{"timestamp":"2026-04-25T15:43:19.818Z","event":"heartbeat","sessionId":"ses_23ab1c38cffeXLyKK5daXRi8CY"}
+{"timestamp":"2026-04-25T15:43:30.563Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:43:39.396Z","event":"heartbeat","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg"}
+{"timestamp":"2026-04-25T15:43:48.190Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:44:14.706Z","event":"heartbeat","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg"}
+{"timestamp":"2026-04-25T15:44:31.195Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:45:25.661Z","event":"heartbeat","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg"}
+{"timestamp":"2026-04-25T15:46:17.196Z","event":"heartbeat","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg"}
+{"timestamp":"2026-04-25T15:46:58.892Z","event":"heartbeat","sessionId":"ses_23ab1cb38ffe3ZYgy24Bxercwg"}
+{"timestamp":"2026-04-25T15:47:05.343Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:47:06.106Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:47:25.463Z","event":"session_started","sessionId":"ses_23aacfc35ffeVH6pTmnatsXVWv","agentName":"coder"}
+{"timestamp":"2026-04-25T15:47:25.464Z","event":"delegation_begin","sessionId":"ses_23aacfc35ffeVH6pTmnatsXVWv","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:47:25.540Z","event":"heartbeat","sessionId":"ses_23aacfc35ffeVH6pTmnatsXVWv"}
+{"timestamp":"2026-04-25T15:47:27.177Z","event":"session_started","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM","agentName":"coder"}
+{"timestamp":"2026-04-25T15:47:27.177Z","event":"delegation_begin","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:47:27.249Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:47:29.038Z","event":"session_started","sessionId":"ses_23aacee40ffe4EBnz7i3vFEcHR","agentName":"coder"}
+{"timestamp":"2026-04-25T15:47:29.038Z","event":"delegation_begin","sessionId":"ses_23aacee40ffe4EBnz7i3vFEcHR","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:47:29.096Z","event":"heartbeat","sessionId":"ses_23aacee40ffe4EBnz7i3vFEcHR"}
+{"timestamp":"2026-04-25T15:47:29.191Z","event":"session_started","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC","agentName":"coder"}
+{"timestamp":"2026-04-25T15:47:29.191Z","event":"delegation_begin","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:47:29.255Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:48:01.360Z","event":"heartbeat","sessionId":"ses_23aacee40ffe4EBnz7i3vFEcHR"}
+{"timestamp":"2026-04-25T15:48:17.173Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:48:29.916Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:48:36.336Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:49:03.061Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:49:08.000Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:49:33.215Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:49:44.853Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:49:49.941Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:50:03.730Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:50:06.161Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/syntax_check/evidence.json","agent":"evidence-manager","taskId":"syntax_check","attempt":0}
+{"timestamp":"2026-04-25T15:50:43.540Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:50:47.856Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:51:20.438Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:51:24.222Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:51:54.806Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:51:56.365Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:52:26.039Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:52:29.923Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:52:58.279Z","event":"heartbeat","sessionId":"ses_23aaceda2ffeFZXAoz1GIiU4mC"}
+{"timestamp":"2026-04-25T15:53:01.635Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:53:22.304Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:53:34.668Z","event":"heartbeat","sessionId":"ses_23aacf586ffeIesB9LouIvMDwM"}
+{"timestamp":"2026-04-25T15:54:09.522Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:54:10.361Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:54:19.516Z","event":"session_started","sessionId":"ses_23aa6aad0ffeY88s9DVMpIzS1E","agentName":"coder"}
+{"timestamp":"2026-04-25T15:54:19.516Z","event":"delegation_begin","sessionId":"ses_23aa6aad0ffeY88s9DVMpIzS1E","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:54:19.585Z","event":"heartbeat","sessionId":"ses_23aa6aad0ffeY88s9DVMpIzS1E"}
+{"timestamp":"2026-04-25T15:54:21.680Z","event":"session_started","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl","agentName":"coder"}
+{"timestamp":"2026-04-25T15:54:21.680Z","event":"delegation_begin","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:54:21.741Z","event":"heartbeat","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl"}
+{"timestamp":"2026-04-25T15:54:23.857Z","event":"session_started","sessionId":"ses_23aa699daffevHYSiT8d70bX2k","agentName":"coder"}
+{"timestamp":"2026-04-25T15:54:23.857Z","event":"delegation_begin","sessionId":"ses_23aa699daffevHYSiT8d70bX2k","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:54:23.915Z","event":"heartbeat","sessionId":"ses_23aa699daffevHYSiT8d70bX2k"}
+{"timestamp":"2026-04-25T15:54:24.030Z","event":"session_started","sessionId":"ses_23aa69931ffe4MkKGsm9iAEQtx","agentName":"coder"}
+{"timestamp":"2026-04-25T15:54:24.030Z","event":"delegation_begin","sessionId":"ses_23aa69931ffe4MkKGsm9iAEQtx","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:54:24.086Z","event":"heartbeat","sessionId":"ses_23aa69931ffe4MkKGsm9iAEQtx"}
+{"timestamp":"2026-04-25T15:54:50.007Z","event":"heartbeat","sessionId":"ses_23aa6aad0ffeY88s9DVMpIzS1E"}
+{"timestamp":"2026-04-25T15:54:57.242Z","event":"heartbeat","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl"}
+{"timestamp":"2026-04-25T15:54:59.112Z","event":"heartbeat","sessionId":"ses_23aa69931ffe4MkKGsm9iAEQtx"}
+{"timestamp":"2026-04-25T15:55:29.069Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:55:36.496Z","event":"heartbeat","sessionId":"ses_23aa699daffevHYSiT8d70bX2k"}
+{"timestamp":"2026-04-25T15:55:38.316Z","event":"heartbeat","sessionId":"ses_23aa69931ffe4MkKGsm9iAEQtx"}
+{"timestamp":"2026-04-25T15:55:43.574Z","event":"heartbeat","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl"}
+{"timestamp":"2026-04-25T15:56:09.000Z","event":"heartbeat","sessionId":"ses_23aa699daffevHYSiT8d70bX2k"}
+{"timestamp":"2026-04-25T15:56:12.153Z","event":"heartbeat","sessionId":"ses_23aa69931ffe4MkKGsm9iAEQtx"}
+{"timestamp":"2026-04-25T15:56:14.088Z","event":"heartbeat","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl"}
+{"timestamp":"2026-04-25T15:56:26.529Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:56:43.353Z","event":"heartbeat","sessionId":"ses_23aa699daffevHYSiT8d70bX2k"}
+{"timestamp":"2026-04-25T15:56:45.068Z","event":"heartbeat","sessionId":"ses_23aa6a25dffeYqz6GocTTwnwtl"}
+{"timestamp":"2026-04-25T15:56:57.524Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:57:21.405Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:57:22.328Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:57:56.081Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:58:05.704Z","event":"session_started","sessionId":"ses_23aa33746ffeGD8IUD42kRWRVd","agentName":"coder"}
+{"timestamp":"2026-04-25T15:58:05.704Z","event":"delegation_begin","sessionId":"ses_23aa33746ffeGD8IUD42kRWRVd","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:58:05.775Z","event":"heartbeat","sessionId":"ses_23aa33746ffeGD8IUD42kRWRVd"}
+{"timestamp":"2026-04-25T15:58:38.918Z","event":"heartbeat","sessionId":"ses_23aa33746ffeGD8IUD42kRWRVd"}
+{"timestamp":"2026-04-25T15:59:13.505Z","event":"heartbeat","sessionId":"ses_23aa33746ffeGD8IUD42kRWRVd"}
+{"timestamp":"2026-04-25T15:59:29.066Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T15:59:30.124Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T15:59:40.604Z","event":"session_started","sessionId":"ses_23aa1c491ffew4WwGLz6QJ4LeU","agentName":"coder"}
+{"timestamp":"2026-04-25T15:59:40.604Z","event":"delegation_begin","sessionId":"ses_23aa1c491ffew4WwGLz6QJ4LeU","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:59:40.687Z","event":"heartbeat","sessionId":"ses_23aa1c491ffew4WwGLz6QJ4LeU"}
+{"timestamp":"2026-04-25T15:59:42.644Z","event":"session_started","sessionId":"ses_23aa1bc9bffeTniojd6WgmPhWl","agentName":"coder"}
+{"timestamp":"2026-04-25T15:59:42.644Z","event":"delegation_begin","sessionId":"ses_23aa1bc9bffeTniojd6WgmPhWl","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:59:42.716Z","event":"heartbeat","sessionId":"ses_23aa1bc9bffeTniojd6WgmPhWl"}
+{"timestamp":"2026-04-25T15:59:45.049Z","event":"session_started","sessionId":"ses_23aa1b332ffe32jTHLEAfHZgf7","agentName":"coder"}
+{"timestamp":"2026-04-25T15:59:45.049Z","event":"delegation_begin","sessionId":"ses_23aa1b332ffe32jTHLEAfHZgf7","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:59:45.108Z","event":"heartbeat","sessionId":"ses_23aa1b332ffe32jTHLEAfHZgf7"}
+{"timestamp":"2026-04-25T15:59:45.238Z","event":"session_started","sessionId":"ses_23aa1b277ffefuZURrjCeaCVhB","agentName":"coder"}
+{"timestamp":"2026-04-25T15:59:45.238Z","event":"delegation_begin","sessionId":"ses_23aa1b277ffefuZURrjCeaCVhB","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T15:59:45.301Z","event":"heartbeat","sessionId":"ses_23aa1b277ffefuZURrjCeaCVhB"}
+{"timestamp":"2026-04-25T16:00:16.728Z","event":"heartbeat","sessionId":"ses_23aa1c491ffew4WwGLz6QJ4LeU"}
+{"timestamp":"2026-04-25T16:00:17.763Z","event":"heartbeat","sessionId":"ses_23aa1b332ffe32jTHLEAfHZgf7"}
+{"timestamp":"2026-04-25T16:00:23.329Z","event":"heartbeat","sessionId":"ses_23aa1bc9bffeTniojd6WgmPhWl"}
+{"timestamp":"2026-04-25T16:01:03.332Z","event":"heartbeat","sessionId":"ses_23aa1b277ffefuZURrjCeaCVhB"}
+{"timestamp":"2026-04-25T16:29:40.720Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T16:29:43.574Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T16:29:45.269Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T16:29:45.996Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T16:29:47.254Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}

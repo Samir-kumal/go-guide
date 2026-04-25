@@ -31,7 +31,7 @@ export function ChannelsTutorial() {
       </ul>
 
       <ComparisonGrid
-        goContent={
+        left={
           <div>
             <h4 className="font-bold">🐹 Go Channels</h4>
             <p>Built-in primitive for goroutine communication</p>
@@ -40,7 +40,7 @@ ch <- 42                 // Send value
 v := <-ch              // Receive value`}</CodeBlock>
           </div>
         }
-        jsContent={
+        right={
           <div>
             <h4 className="font-bold">📜 JavaScript</h4>
             <p>No direct equivalent — use workarounds</p>
@@ -129,26 +129,25 @@ recvCh = make(chan int)`}</CodeBlock>
       </h3>
 
       <ComparisonGrid
-        goContent={
+        left={
           <div>
             <h4 className="font-bold">Unbuffered Channel</h4>
             <CodeBlock>{`ch := make(chan int)
-// Sender blocks until receiver is ready
-// Receiver blocks until sender sends
-// ✓ Synchronization point
-<-ch  // Blocks until someone sends`}</CodeBlock>
+      // Sender blocks until receiver is ready
+      // Receiver blocks until sender sends
+      // ✓ Synchronization point
+      <-ch  // Blocks until someone sends`}</CodeBlock>
           </div>
         }
-        jsContent={
+        right={
           <div>
             <h4 className="font-bold">Buffered Channel</h4>
             <CodeBlock>{`ch := make(chan int, 3) // Buffer of 3
-// Sender blocks only when buffer full
-// Can send 3 without receiver!
-ch <- 1
-ch <- 2
-ch <- 3
-// ch <- 4 // Blocks!`}</CodeBlock>
+      // Sender blocks only when buffer full
+      // Can send 3 without receiver!
+      ch <- 1
+      ch <- 2
+      ch <- 3`}</CodeBlock>
           </div>
         }
       />
@@ -376,7 +375,7 @@ func fanIn(channels ...<-chan int) <-chan int {
         Laravel Comparison
       </h3>
       <ComparisonGrid
-        goContent={
+        left={
           <div>
             <h4 className="font-bold">🐹 Go Channels</h4>
             <ul className="mt-2 space-y-1">
@@ -395,7 +394,7 @@ func fanIn(channels ...<-chan int) <-chan int {
             </ul>
           </div>
         }
-        jsContent={
+        right={
           <div>
             <h4 className="font-bold">💚 Laravel Queues & Events</h4>
             <ul className="mt-2 space-y-1">

@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'
 import { SectionEntry } from '@/lib/sections'
 import { useSidebarScroll } from '@/hooks/useSidebarScroll'
 import { Sidebar } from './Sidebar'
+import { ThemeToggle } from './ThemeToggle'
 import { getLanguage } from '@/lib/languages'
 import Link from 'next/link'
 
@@ -22,32 +23,60 @@ export function LayoutShell({ children, sections, langId }: Props) {
   const { activeSection, progress } = useSidebarScroll(sectionIds)
 
   return (
-    <>
-      {/* Mobile Header */}
-      <header className="md:hidden sticky top-0 bg-[#1a1a2e] text-white p-4 flex justify-between items-center z-[80] shadow-md">
-        <Link href="/" className="flex items-center gap-2 no-underline text-white">
-          <span className="text-xl">{lang?.icon || '📚'}</span>
-          <span className="font-bold tracking-tight">{lang?.name || 'Guide'}</span>
-        </Link>
-        <button 
-          onClick={() => setIsSidebarOpen(true)}
-          className="bg-transparent border border-white/30 text-white px-3 py-1.5 rounded-md text-sm cursor-pointer hover:bg-white/10"
-        >
-          Menu
-        </button>
+    <div className="min-h-screen bg-[var(--bg-page)] transition-colors duration-300">
+      {/* Top Navigation Bar */}
+      <header className="fixed top-0 left-0 right-0 h-[var(--nav-h)] bg-[var(--bg-sidebar)] dark:bg-[#0f172a] border-b border-slate-200/60 dark:border-[#1e293b] flex items-center justify-between px-8 z-[100] transition-colors duration-300 shadow-sm shadow-indigo-500/5">
+        <div className="flex items-center gap-10">
+          <Link href="/" className="flex items-center gap-3 no-underline group">
+            <div className="w-9 h-9 bg-[var(--primary)] rounded-xl flex items-center justify-center font-black text-white shadow-xl shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+              G
+            </div>
+            <span className="font-black tracking-tight text-[var(--text-primary)] text-xl">GoCode</span>
+          </Link>
+
+          <nav className="hidden xl:flex items-center gap-8">
+            <Link href="#quick-comparison" className="text-xs font-bold uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors no-underline">Quick Comparison</Link>
+            <Link href="#code-breakdown" className="text-xs font-bold uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors no-underline">Code Breakdown</Link>
+            <Link href="#deep-dive" className="text-xs font-bold uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors no-underline">Deep Dive</Link>
+            <Link href="#literals-types" className="text-xs font-bold uppercase tracking-widest text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors no-underline">Literals & Types</Link>
+          </nav>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <button className="p-2.5 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          
+          <ThemeToggle />
+
+          <button 
+            onClick={() => setIsSidebarOpen(true)}
+            className="lg:hidden p-2.5 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
       </header>
 
-      <Sidebar 
-        sections={sections} 
-        activeSection={activeSection || `#${pathname.split('/').pop()}`} 
-        progress={progress} 
-        isOpen={isSidebarOpen}
-        onClose={() => setIsSidebarOpen(false)}
-      />
-      
-      <main className="md:ml-[calc(var(--sidebar-w)+20px)] max-w-[900px] px-6 md:px-10 py-10">
-        {children}
-      </main>
-    </>
+      <div className="flex pt-[var(--nav-h)]">
+        <Sidebar 
+          sections={sections} 
+          activeSection={activeSection || `#${pathname.split('/').pop()}`} 
+          progress={progress} 
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
+        
+        <main className="flex-1 lg:ml-[var(--sidebar-w)] min-w-0">
+          <div className="max-w-[1000px] mx-auto px-10 lg:px-16 py-16">
+            {children}
+          </div>
+        </main>
+      </div>
+    </div>
   )
 }

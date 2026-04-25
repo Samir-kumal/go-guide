@@ -3,9 +3,15 @@ import { ComparisonTable } from '@/components/ui'
 export function QuickComparison() {
   return (
     <section>
-      <h2 id="quick-comparison" className="text-[#1a73e8] mt-10 text-2xl font-semibold">
-        Quick Comparison Table
-      </h2>
+      <div className="mb-6">
+        <h2 id="quick-comparison" className="text-slate-900 dark:text-white text-3xl font-bold mb-2">
+          Quick Comparison Table
+        </h2>
+        <p className="text-slate-500 dark:text-slate-400 text-sm">
+          Essential Go concepts and their JavaScript equivalents
+        </p>
+      </div>
+      
       <ComparisonTable>
         <thead>
           <tr>
@@ -15,18 +21,53 @@ export function QuickComparison() {
           </tr>
         </thead>
         <tbody>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">package main</code></td><td>Entry point</td><td>Every executable starts here</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">func name() returnType</code></td><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">{'function name() {}'}</code></td><td>Explicit return types</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">:=</code></td><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">const</code> / <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">let</code></td><td>Short variable declaration</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">*Type</code></td><td>Reference</td><td>Go uses explicit pointers</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">error</code></td><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">try/catch</code></td><td>Go returns errors as values</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">defer</code></td><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">finally</code></td><td>Runs cleanup on scope exit</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">chan</code></td><td>Async/await</td><td>Concurrency primitive</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">struct</code></td><td>Object / Class</td><td>Data structure</td></tr>
-          <tr><td><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">interface</code></td><td>Protocol / Duck typing</td><td>Defines contracts</td></tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">package main</td>
+            <td className="text-amber-600 dark:text-yellow-500">Entry point</td>
+            <td className="text-slate-500 dark:text-slate-400">Every executable starts here</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">func name() returnType</td>
+            <td className="text-amber-600 dark:text-yellow-500">function name() {"{}"}</td>
+            <td className="text-slate-500 dark:text-slate-400">Explicit return types</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">:=</td>
+            <td className="text-amber-600 dark:text-yellow-500">const / let</td>
+            <td className="text-slate-500 dark:text-slate-400">Short variable declaration</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">*Type</td>
+            <td className="text-amber-600 dark:text-yellow-500">Reference</td>
+            <td className="text-slate-500 dark:text-slate-400">Go uses explicit pointers</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">error</td>
+            <td className="text-amber-600 dark:text-yellow-500">try/catch</td>
+            <td className="text-slate-500 dark:text-slate-400">Go returns errors as values</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">defer</td>
+            <td className="text-amber-600 dark:text-yellow-500">finally</td>
+            <td className="text-slate-500 dark:text-slate-400">Runs cleanup on scope exit</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">chan</td>
+            <td className="text-amber-600 dark:text-yellow-500">Async/await</td>
+            <td className="text-slate-500 dark:text-slate-400">Concurrency primitive</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">struct</td>
+            <td className="text-amber-600 dark:text-yellow-500">Object / Class</td>
+            <td className="text-slate-500 dark:text-slate-400">Data structure</td>
+          </tr>
+          <tr>
+            <td className="font-mono text-blue-600 dark:text-blue-400">interface</td>
+            <td className="text-amber-600 dark:text-yellow-500">Protocol / Duck typing</td>
+            <td className="text-slate-500 dark:text-slate-400">Defines contracts</td>
+          </tr>
         </tbody>
       </ComparisonTable>
-      <hr className="border-none border-t border-[#ddd] my-10" />
     </section>
   )
 }

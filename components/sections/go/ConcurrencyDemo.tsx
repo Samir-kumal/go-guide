@@ -37,7 +37,7 @@ export function ConcurrencyDemo() {
 
       <h3 className="text-[#5f6368]">The Core Difference</h3>
       <ComparisonGrid
-        goContent={
+        left={
           <>
             <h4 className="font-bold">🐹 Go - Goroutines</h4>
             <p><strong>Lightweight threads</strong></p>
@@ -48,15 +48,15 @@ export function ConcurrencyDemo() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#0288d1] text-white">chan</span>
           </>
         }
-        jsContent={
+        right={
           <>
             <h4 className="font-bold">📜 JavaScript - Async/Await</h4>
             <p><strong>Event Loop</strong></p>
             <p>Single thread with callbacks</p>
-            <p>One at a time: event loop</p>
-            <p className="text-2xl my-2">🔄 cooperative</p>
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#ff9800] text-white mr-1">async</span>
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#9c27b0] text-white">await</span>
+            <p>Non-blocking I/O</p>
+            <p className="text-2xl my-2">🐢 single thread</p>
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#f44336] text-white mr-1">async</span>
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-[#ff9800] text-white">await</span>
           </>
         }
       />

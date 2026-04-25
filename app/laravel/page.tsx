@@ -1,31 +1,31 @@
 import { Routing } from '@/components/sections/laravel/Routing'
-import { Controllers } from '@/components/sections/laravel/Controllers'
-import { RequestsResponses } from '@/components/sections/laravel/RequestsResponses'
-import { Middleware } from '@/components/sections/laravel/Middleware'
-import { Sanctum } from '@/components/sections/laravel/Sanctum'
+import { ControllersTutorial } from '@/components/sections/laravel/Controllers'
+import { RequestsResponsesTutorial } from '@/components/sections/laravel/RequestsResponses'
+import { MiddlewareTutorial } from '@/components/sections/laravel/Middleware'
+import { SanctumTutorial } from '@/components/sections/laravel/Sanctum'
 import { Validation } from '@/components/sections/laravel/Validation'
 import { ErrorHandlingTutorial } from '@/components/sections/laravel/ErrorHandling'
 import { Testing } from '@/components/sections/laravel/Testing'
 import { SessionsCookies } from '@/components/sections/laravel/SessionsCookies'
-import { BladeTemplates } from '@/components/sections/laravel/BladeTemplates'
-import { EloquentORM } from '@/components/sections/laravel/EloquentORM'
-import { MigrationsSeeders } from '@/components/sections/laravel/MigrationsSeeders'
-import { ScoutSearch } from '@/components/sections/laravel/ScoutSearch'
-import { FileStorage } from '@/components/sections/laravel/FileStorage'
+import { BladeTemplatesTutorial } from '@/components/sections/laravel/BladeTemplates'
+import { EloquentORMTutorial } from '@/components/sections/laravel/EloquentORM'
+import { MigrationsSeedersTutorial } from '@/components/sections/laravel/MigrationsSeeders'
+import { ScoutSearchTutorial } from '@/components/sections/laravel/ScoutSearch'
+import { FileStorageTutorial } from '@/components/sections/laravel/FileStorage'
 import { Mail } from '@/components/sections/laravel/Mail'
-import { Notifications } from '@/components/sections/laravel/Notifications'
+import { NotificationsTutorial } from '@/components/sections/laravel/Notifications'
 import { ReverbWebSockets } from '@/components/sections/laravel/ReverbWebSockets'
-import { Collections } from '@/components/sections/laravel/Collections'
-import { ServiceContainer } from '@/components/sections/laravel/ServiceContainer'
-import { Pennant } from '@/components/sections/laravel/Pennant'
-import { QueuesJobs } from '@/components/sections/laravel/QueuesJobs'
-import { EventsListeners } from '@/components/sections/laravel/EventsListeners'
+import { CollectionsTutorial } from '@/components/sections/laravel/Collections'
+import { ServiceContainerTutorial } from '@/components/sections/laravel/ServiceContainer'
+import { PennantTutorial } from '@/components/sections/laravel/Pennant'
+import { QueuesJobsTutorial } from '@/components/sections/laravel/QueuesJobs'
+import { EventsListenersTutorial } from '@/components/sections/laravel/EventsListeners'
 import { TaskScheduling } from '@/components/sections/laravel/TaskScheduling'
-import { Horizon } from '@/components/sections/laravel/Horizon'
-import { Pulse } from '@/components/sections/laravel/Pulse'
-import { Nova } from '@/components/sections/laravel/Nova'
-import { AuthenticationAuthorization } from '@/components/sections/laravel/AuthenticationAuthorization'
-import { ArtisanConsole } from '@/components/sections/laravel/ArtisanConsole'
+import { HorizonTutorial } from '@/components/sections/laravel/Horizon'
+import { PulseTutorial } from '@/components/sections/laravel/Pulse'
+import { NovaTutorial } from '@/components/sections/laravel/Nova'
+import { AuthenticationAuthorizationTutorial } from '@/components/sections/laravel/AuthenticationAuthorization'
+import { ArtisanConsoleTutorial } from '@/components/sections/laravel/ArtisanConsole'
 
 export default function LaravelGuidePage() {
   return (
@@ -39,33 +39,33 @@ export default function LaravelGuidePage() {
       <hr className="border-none border-t border-[#ddd] my-10" />
       
       <Routing />
-      <Controllers />
-      <RequestsResponses />
-      <Middleware />
-      <Sanctum />
+      <ControllersTutorial />
+      <RequestsResponsesTutorial />
+      <MiddlewareTutorial />
+      <SanctumTutorial />
       <Validation />
       <ErrorHandlingTutorial />
       <Testing />
       <SessionsCookies />
-      <BladeTemplates />
-      <EloquentORM />
-      <MigrationsSeeders />
-      <ScoutSearch />
-      <FileStorage />
+      <BladeTemplatesTutorial />
+      <EloquentORMTutorial />
+      <MigrationsSeedersTutorial />
+      <ScoutSearchTutorial />
+      <FileStorageTutorial />
       <Mail />
-      <Notifications />
+      <NotificationsTutorial />
       <ReverbWebSockets />
-      <Collections />
-      <ServiceContainer />
-      <Pennant />
-      <QueuesJobs />
-      <EventsListeners />
+      <CollectionsTutorial />
+      <ServiceContainerTutorial />
+      <PennantTutorial />
+      <QueuesJobsTutorial />
+      <EventsListenersTutorial />
       <TaskScheduling />
-      <Horizon />
-      <Pulse />
-      <Nova />
-      <AuthenticationAuthorization />
-      <ArtisanConsole />
+      <HorizonTutorial />
+      <PulseTutorial />
+      <NovaTutorial />
+      <AuthenticationAuthorizationTutorial />
+      <ArtisanConsoleTutorial />
 
       <p className="text-center text-[#666] mt-10">
         <em>Document created for learning purposes. Happy coding!</em>

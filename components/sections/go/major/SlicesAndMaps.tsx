@@ -67,7 +67,7 @@ const nums = [1, 2, 3]; // Automatically grows`}</CodeBlock>
       </p>
 
       <ComparisonGrid
-        goContent={
+        left={
           <>
             <h4 className="font-bold">🐹 Go Map</h4>
             <p>Iteration is <strong>randomized</strong> by design.</p>
@@ -75,7 +75,7 @@ const nums = [1, 2, 3]; // Automatically grows`}</CodeBlock>
             <p><strong>Not thread-safe</strong> (panics on concurrent write).</p>
           </>
         }
-        jsContent={
+        right={
           <>
             <h4 className="font-bold">📜 JS Object/Map</h4>
             <p>Object keys are stringified; <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">Map</code> keys can be anything.</p>

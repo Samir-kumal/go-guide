@@ -1,25 +1,20 @@
-import { ReactNode } from 'react'
-
-interface DeepDiveProps {
-  title?: string
-  children: ReactNode
-}
-
-export function DeepDive({ title = 'Staff Engineer Deep Dive', children }: DeepDiveProps) {
+export function DeepDive({ title, children }: { title: string, children: React.ReactNode }) {
   return (
-    <details className="my-6 border border-[#e0e0e0] rounded-lg overflow-hidden group">
-      <summary className="bg-[#f8f9fa] p-4 cursor-pointer flex items-center justify-between hover:bg-[#f1f3f4] transition-colors list-none">
-        <div className="flex items-center gap-2">
-          <span className="bg-[#1a73e8] text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-            Staff Level
-          </span>
-          <span className="font-semibold text-[#3c4043]">{title}</span>
+    <details className="my-8 border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-[#1e293b]/30 overflow-hidden group transition-colors duration-300">
+      <summary className="px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors list-none">
+        <div className="flex items-center gap-4">
+          <div className="bg-blue-500/10 text-blue-600 dark:text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-blue-200 dark:border-blue-500/20">
+            Deep Dive
+          </div>
+          <span className="font-bold text-slate-900 dark:text-slate-200">{title}</span>
         </div>
-        <span className="text-[#5f6368] group-open:rotate-180 transition-transform">
-          ▼
-        </span>
+        <div className="w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 group-open:rotate-180 transition-transform">
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </summary>
-      <div className="p-4 bg-white border-t border-[#e0e0e0] text-[#3c4043] leading-relaxed">
+      <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-6">
         {children}
       </div>
     </details>
