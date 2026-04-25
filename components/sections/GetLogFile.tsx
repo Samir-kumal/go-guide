@@ -7,13 +7,12 @@ export function GetLogFile() {
         Function: getLogFile()
       </h2>
       <p>Creates a log file for today&apos;s date.</p>
-      <CodeBlock>{`func getLogFile() *os.File {
+      <CodeBlock>{`func getLogFile() (*os.File, error) {
     logDir := "logs"
 
     // Create logs directory if it doesn't exist
     if err := os.MkdirAll(logDir, 0755); err != nil {
-        slog.Error("Failed to create log directory", "error", err)
-        return nil
+        return nil, fmt.Errorf("failed to create log directory: %w", err)
     }
 
     // Create log file: logs/2026-04-15.log
@@ -22,11 +21,10 @@ export function GetLogFile() {
     // Open file in append mode
     f, err := os.OpenFile(logFile, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
     if err != nil {
-        slog.Error("Failed to open log file", "error", err)
-        return nil
+        return nil, fmt.Errorf("failed to open log file: %w", err)
     }
 
-    return f
+    return f, nil
 }`}</CodeBlock>
 
       <p><strong>JavaScript equivalent:</strong></p>

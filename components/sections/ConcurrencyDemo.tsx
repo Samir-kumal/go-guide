@@ -74,14 +74,26 @@ export function ConcurrencyDemo() {
 
       <h4>Go - Concurrent (all at once)</h4>
       <CodeBlock>{`func fetchAll() {
+    var wg sync.WaitGroup
     var user User
     var posts []Post
     var todos []Todo
 
-    go func() { db.Query(&user) }()
-    go func() { db.Query(&posts) }()
-    go func() { db.Query(&todos) }()
+    wg.Add(3)
+    go func() {
+        defer wg.Done()
+        db.Query(&user)
+    }()
+    go func() {
+        defer wg.Done()
+        db.Query(&posts)
+    }()
+    go func() {
+        defer wg.Done()
+        db.Query(&todos)
+    }()
 
+    wg.Wait() // Wait for all 3 to finish! ✅
     // Total time: 1 × 100ms = 100ms ✅
 }`}</CodeBlock>
 

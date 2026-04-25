@@ -1,5 +1,8 @@
 import { QuickComparison } from '@/components/sections/QuickComparison'
 import { CodeBreakdown } from '@/components/sections/CodeBreakdown'
+import { EverySingleLineExplained } from '@/components/sections/EverySingleLineExplained'
+import { SourceCodeRepresentation } from '@/components/sections/SourceCodeRepresentation'
+import { FloatingPointLiterals, ImaginaryLiterals, RuneLiterals, StringLiterals, Constants, Variables, Types, BooleanTypes, NumericTypes, StringTypes, ArrayTypes } from '@/components/sections/GoLiteralsTypes'
 import { GetLogFile } from '@/components/sections/GetLogFile'
 import { GetLogFileDetailed } from '@/components/sections/GetLogFileDetailed'
 import { IfInitialization } from '@/components/sections/IfInitialization'
@@ -38,6 +41,19 @@ export default function HomePage() {
       <hr className="border-none border-t border-[#ddd] my-10" />
       <QuickComparison />
       <CodeBreakdown />
+      <EverySingleLineExplained />
+      <SourceCodeRepresentation />
+      <FloatingPointLiterals />
+      <ImaginaryLiterals />
+      <RuneLiterals />
+      <StringLiterals />
+      <Constants />
+      <Variables />
+      <Types />
+      <BooleanTypes />
+      <NumericTypes />
+      <StringTypes />
+      <ArrayTypes />
       <GetLogFile />
       <GetLogFileDetailed />
       <IfInitialization />

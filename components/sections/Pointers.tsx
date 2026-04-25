@@ -7,10 +7,13 @@ export function Pointers() {
         2. Pointers
       </h2>
       <p>Go uses pointers explicitly:</p>
-      <CodeBlock>{`// Return a pointer
-func getLogFile() *os.File {  // * means pointer return
-    f := os.File{}
-    return &f  // & means "get address of"
+      <CodeBlock>{`// Return a pointer AND an error
+func getLogFile() (*os.File, error) {  // * means pointer return
+    f, err := os.Open("logs.txt")
+    if err != nil {
+        return nil, err
+    }
+    return f, nil  // returns the pointer
 }
 
 // Using a pointer

@@ -8,29 +8,26 @@ export function GetLogFileDetailed() {
       </h2>
       <p>This function creates/opens a daily log file and returns a file handle.</p>
 
-      <CodeBlock>{`func getLogFile() *os.File {
+      <CodeBlock>{`func getLogFile() (*os.File, error) {
     logDir := "logs"
 
     if err := os.MkdirAll(logDir, 0755); err != nil {
-        slog.Error("Failed to create log directory", "error", err)
-        return nil
+        return nil, fmt.Errorf("failed to create log directory: %w", err)
     }
 
     logFile := filepath.Join(logDir, time.Now().Format("2006-01-02")+".log")
 
     f, err := os.OpenFile(logFile, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
     if err != nil {
-        slog.Error("Failed to open log file", "error", err)
-        return nil
+        return nil, fmt.Errorf("failed to open log file: %w", err)
     }
 
-    return f
+    return f, nil
 }`}</CodeBlock>
 
       <h3 className="text-[#5f6368]">Step 1: Create the logs directory</h3>
       <CodeBlock>{`if err := os.MkdirAll(logDir, 0755); err != nil {
-    slog.Error("Failed to create log directory", "error", err)
-    return nil
+    return nil, fmt.Errorf("failed to create log directory: %w", err)
 }`}</CodeBlock>
       <p><code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">os.MkdirAll</code> creates the <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">logs/</code> directory and any parent directories (like <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">mkdir -p</code>).</p>
       <p><strong>Permissions 0755:</strong> Owner: read+write+execute (7), Group: read+execute (5), Others: read+execute (5)</p>
@@ -75,14 +72,14 @@ export function GetLogFileDetailed() {
       <CodeBlock>{`getLogFile()
     │
     ├── Create "logs/" directory
-    │       └── Failed? → log error, return nil
+    │       └── Failed? → return error
     │
     ├── Build filename: "logs/2026-04-15.log"
     │
     ├── Open file (create if needed, append mode)
-    │       └── Failed? → log error, return nil
+    │       └── Failed? → return error
     │
-    └── Return file handle ✅`}</CodeBlock>
+    └── Return file handle and nil error ✅`}</CodeBlock>
 
       <hr className="border-none border-t border-[#ddd] my-10" />
     </section>
