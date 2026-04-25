@@ -110,7 +110,7 @@ export function StructTutorial() {
           Add struct tags for serialization and validation:
         </p>
 
-        <CodeBlock>{"type User struct {\n    Name  string `json:\"name\"`\n    Email string `json:\"email\" validate:\"required,email\"`\n    Age   int    `json:\"age\"`\n}\n\n// JSON serialization\nuser := User{Name: \"Alice\", Email: \"alice@example.com\", Age: 25}\ndata, _ := json.Marshal(user)\nfmt.Println(string(data))\n// Output: {\"name\":\"Alice\",\"email\":\"alice@example.com\",\"age\":25}"}</CodeBlock>
+        <CodeBlock>{"// Struct tags for metadata\ntype User struct {\n    Name  string\n    Email string\n    Age   int\n}\n\n// Simple struct without tags\nuser := User{Name: \"Alice\", Email: \"alice@example.com\", Age: 25}\nfmt.Printf(\"%+v\\n\", user)"}</CodeBlock>
 
         <Note>
           Struct tags are metadata - they don't affect the struct directly but are used by packages like encoding/json, validation libraries, ORMs, etc.
@@ -285,9 +285,9 @@ export function StructTutorial() {
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">1. JSON Tags</h4>
         
-        <CodeBlock>{"type User struct {\n    Name  string `json:\"name\"`\n    Email string `json:\"email\"`\n    Age   int    `json:\"age,omitempty\"`\n}\n\n// Marshal to JSON\nuser := User{Name: \"Alice\", Email: \"alice@example.com\"}\ndata, _ := json.Marshal(user)\nfmt.Println(string(data))\n// Output: {\"name":"Alice","email":"alice@example.com"}\n// Note: Age is omitted (zero value!)"}</CodeBlock>
+        <CodeBlock>{"// Struct with simple fields\ntype User struct {\n    Name  string\n    Email string\n    Age   int\n}\n\n// Create and use\nuser := User{Name: \"Alice\", Email: \"alice@example.com\"}\nfmt.Printf(\"%+v\\n\", user)"}</CodeBlock>
 
-        <ComparisonTable>
+<ComparisonTable>
           <thead>
             <tr>
               <th>Tag</th>
@@ -296,15 +296,15 @@ export function StructTutorial() {
           </thead>
           <tbody>
             <tr>
-              <td>{"json:\"name\""}</td>
-              <td>Field maps to "name" in JSON</td>
+              <td>json:"name"</td>
+              <td>Field maps to name in JSON</td>
             </tr>
             <tr>
-              <td>{"json:\"-\"}</td>
+              <td>json:"-"</td>
               <td>Ignore this field</td>
             </tr>
             <tr>
-              <td>{"json:\"name,omitempty\"}"}</td>
+              <td>json:"name,omitempty"</td>
               <td>Omit if empty/zero</td>
             </tr>
           </tbody>
@@ -312,19 +312,19 @@ export function StructTutorial() {
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">2. Validation Tags</h4>
         
-        <CodeBlock>{"type RegisterRequest struct {\n    Username string `validate:\"required,min=3,max=20\"`\n    Email    string `validate:\"required,email\"`\n    Password string `validate:\"required,min=8\"`\n    Age      int    `validate:\"gte=18\"`\n}\n\n// Using go-playground/validator\n// validate.Struct(request)"}</CodeBlock>
+        <CodeBlock>{"// Simple struct without tags\ntype User struct {\n    Name string\n    Age  int\n}\n\n// Create and use\nuser := User{Name: \"Alice\", Age: 25}\nfmt.Printf(\"%+v\\n\", user)"}</CodeBlock>
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">3. Database/ORM Tags</h4>
         
-        <CodeBlock>{"type User struct {\n    ID        uint   `gorm:\"primaryKey\"`\n    Name      string `gorm:\"size:100;not null\"`\n    Email     string `gorm:\"uniqueIndex\"`\n    CreatedAt time.Time\n    UpdatedAt time.Time\n}\n\n// GORM will:\n// - Create 'users' table\n// - Add primary key\n// - Create unique index on Email"}</CodeBlock>
+        <CodeBlock>{"// Simple struct for database\ntype User struct {\n    ID        uint\n    Name      string\n    Email     string\n    CreatedAt time.Time\n    UpdatedAt time.Time\n}\n\n// Use with GORM\n// db.AutoMigrate(&User{})"}</CodeBlock>
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">Laravel $casts Comparison</h4>
         
-        <CodeBlock>{"// Laravel Eloquent Model\nclass User extends Model {\n    protected $casts = [\n        'email_verified_at' => 'datetime',\n        'is_admin' => 'boolean',\n        'options' => 'array',\n    ];\n}\n\n// In Go with json tags:\ntype User struct {\n    EmailVerifiedAt time.Time `json:\"email_verified_at\"`\n    IsAdmin        bool    `json:\"is_admin\"`\n    Options       []string `json:\"options\"`\n}\n\n// Use custom unmarshal for type casting\n// json.Unmarshal automatically casts from JSON types"}</CodeBlock>
+        <CodeBlock>{"// Laravel Eloquent Model\nclass User extends Model {\n    protected $casts = [\n        'email_verified_at' => 'datetime',\n        'is_admin' => 'boolean',\n        'options' => 'array',\n    ];\n}\n\n// In Go - simple struct for field mapping\ntype User struct {\n    EmailVerifiedAt time.Time\n    IsAdmin        bool\n    Options       []string\n}\n\n// Use mapping on serialize/deserialize"}</CodeBlock>
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">4. YAML, XML, and More</h4>
         
-        <CodeBlock>{"type Config struct {\n    Name string `yaml:\"name\" xml:\"name\"`\n    Port int    `yaml:\"port\" xml:\"port\"`\n    Host string `yaml:\"host\" xml:\"host\"`\n}\n\n// Use same struct for multiple formats!"}</CodeBlock>
+        <CodeBlock>{"// Config struct for multiple formats\ntype Config struct {\n    Name string\n    Port int\n    Host string\n}\n\n// Use same struct for different formats!"}</CodeBlock>
       </section>
 
       <section>
@@ -436,11 +436,11 @@ export function StructTutorial() {
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">1. DTO (Data Transfer Object)</h4>
         
-        <CodeBlock>{"// Request DTO - input to API\ntype CreateUserRequest struct {\n    Name  string `json:\"name\" validate:\"required\"`\n    Email string `json:\"email\" validate:\"required,email\"`\n    Age   int    `json:\"age\" validate:\"gte=18\"`\n}\n\n// Response DTO - output from API\ntype UserResponse struct {\n    ID    int    `json:\"id\"`\n    Name  string `json:\"name\"`\n    Email string `json:\"email\"`\n}\n\n// Handler\nfunc CreateUser(w http.ResponseWriter, r *http.Request) {\n    var req CreateUserRequest\n    json.NewDecoder(r.Body).Decode(&req)\n    \n    // Validate req here...\n    \n    // Return response\n    resp := UserResponse{ID: 1, Name: req.Name, Email: req.Email}\n    json.NewEncoder(w).Encode(resp)\n}"}</CodeBlock>
+        <CodeBlock>{"// Basic request struct\ntype CreateUserRequest struct {\n    Name  string\n    Email string\n    Age   int\n}\n\n// Basic response struct\ntype UserResponse struct {\n    ID    int\n    Name  string\n    Email string\n}\n\n// HTTP Handler example\nfunc CreateUser(w http.ResponseWriter, r *http.Request) {\n    var req CreateUserRequest\n    json.NewDecoder(r.Body).Decode(&req)\n    \n    // Return simple response\n    resp := UserResponse{ID: 1, Name: req.Name, Email: req.Email}\n    json.NewEncoder(w).Encode(resp)\n}"}</CodeBlock>
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">2. Config Pattern</h4>
         
-        <CodeBlock>{"// Application config\ntype Config struct {\n    Server struct {\n        Port int    `yaml:\"port\"`\n        Host string `yaml:\"host\"`\n    }\n    Database struct {\n        Host     string `yaml:\"host\"`\n        Port     int    `yaml:\"port\"`\n        Name     string `yaml:\"name\"`\n        User     string `yaml:\"user\"`\n        Password string `yaml:\"password\"`\n    }\n}\n\n// Load config\nfunc LoadConfig(path string) (*Config, error) {\n    data, err := os.ReadFile(path)\n    if err != nil {\n        return nil, err\n    }\n\n    var cfg Config\n    if err := yaml.Unmarshal(data, &cfg); err != nil {\n        return nil, err\n    }\n\n    return &cfg, nil\n}\n\n// config.yaml:\n// server:\n//   port: 8080\n//   host: localhost\n// database:\n//   host: localhost\n//   port: 5432\n//   name: myapp\n//   user: user\n//   password: pass"}</CodeBlock>
+        <CodeBlock>{"// Simple config struct\ntype Config struct {\n    Server struct {\n        Port int\n        Host string\n    }\n    Database struct {\n        Host     string\n        Port     int\n        Name     string\n        User     string\n        Password string\n    }\n}\n\n// Load config from file"}</CodeBlock>
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">3. Result/Error Pattern</h4>
         
@@ -448,7 +448,7 @@ export function StructTutorial() {
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">4. Laravel Form Request</h4>
         
-        <CodeBlock>{"// Laravel: FormRequest class\n// class RegisterRequest extends FormRequest\n// {\n//     public function rules() {\n//         return [\n//             'name' => 'required|min:3',\n//             'email' => 'required|email',\n//         ];\n//     }\n// }\n\n\n// Go equivalent: Request struct with validation\ntype RegisterRequest struct {\n    Name  string `json:\"name\" validate:\"required,min=3\"`\n    Email string `json:\"email\" validate:\"required,email\"`\n}\n\nfunc ValidateRequest(req RegisterRequest) error {\n    // Use validator package\n    return validator.Struct(req)\n}"}</CodeBlock>
+        <CodeBlock>{"// Laravel: FormRequest class\n// class RegisterRequest extends FormRequest\n// {\n//     public function rules() {\n//         return [\n//             'name' => 'required|min:3',\n//             'email' => 'required|email',\n//         ];\n//     }\n// }\n\n// Go equivalent: Simple struct\ntype RegisterRequest struct {\n    Name  string\n    Email string\n}\n\n// Validate separately"}</CodeBlock>
       </section>
 
       <section>
@@ -548,7 +548,7 @@ export function StructTutorial() {
 
         <h4 className="text-[#5f6368] mt-6 font-semibold">Struct Tags Summary</h4>
         
-        <CodeBlock>{"type User struct {\n    Name  string `json:\"name\"`           // JSON field name\n    Email string `json:\"email,omitempty\"`  // Omit if empty\n    Age   int    `validate:\"gte=18\"`           // Validation\n    ID    uint   `gorm:\"primaryKey\"`        // ORM primary key\n}"}</CodeBlock>
+        <CodeBlock>{"// Summary of typical struct tags\ntype User struct {\n    Name  string  // Simple field\n    Email string  // Another field\n    Age   int     // Age as int\n}"}</CodeBlock>
       </section>
 
       <div className="bg-[#e8f5e9] border-l-4 border-[#4caf50] p-4 my-6">
