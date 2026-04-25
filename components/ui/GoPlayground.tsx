@@ -39,12 +39,15 @@ export function GoPlayground({ isOpen, onClose }: Props) {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: params.toString(),
       })
+      if (!res.ok) {
+        throw new Error(`Go Playground returned ${res.status}`)
+      }
       const data: PlaygroundResponse = await res.json()
       if (data.Errors) {
         setOutput(data.Errors)
         setStatus('error')
       } else {
-        setOutput(data.Events.map((e) => e.Message).join(''))
+        setOutput((data.Events ?? []).map((e) => e.Message).join(''))
         setStatus('success')
       }
     } catch {
