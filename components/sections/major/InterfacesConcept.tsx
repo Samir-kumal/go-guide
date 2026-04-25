@@ -25,8 +25,9 @@ func (f File) Read(p []byte) (n int, err error) {
     return len(p), nil
 }`}</CodeBlock>
 
-      <h4 className="font-semibold mt-4">Empty Interface</h4>
-      <CodeBlock>{`var anything interface{}
+      <h4 className="font-semibold mt-4">The "any" Type (Empty Interface)</h4>
+      <p>Since Go 1.18, <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">any</code> is an alias for the empty interface <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">interface{}</code>.</p>
+      <CodeBlock>{`var anything any
 anything = 42
 anything = "hello"
 anything = []int{1, 2, 3}`}</CodeBlock>
@@ -39,8 +40,8 @@ anything = []int{1, 2, 3}`}</CodeBlock>
         <h4 className="font-bold mb-2">Internal Structure: eface vs iface</h4>
         <p>Under the hood, Go has two types of interfaces:</p>
         <ul className="list-disc pl-5 my-2">
-          <li><strong>eface (Empty Interface):</strong> Represented as <code className="bg-[#f5f5f5] px-1 px-0.5 rounded font-mono text-sm">interface{}</code>. It stores a pointer to the type information and a pointer to the data.</li>
-          <li><strong>iface (Interface with Methods):</strong> Stores an <code className="bg-[#f5f5f5] px-1 px-0.5 rounded font-mono text-sm">itab</code> (interface table) which maps the interface methods to the concrete type&apos;s implementations.</li>
+          <li><strong>eface (any):</strong> Represented internally as <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">any</code>. It stores a pointer to the type information and a pointer to the data.</li>
+          <li><strong>iface (Interface with Methods):</strong> Stores an <code className="bg-[#f5f5f5] px-1.5 py-0.5 rounded font-mono text-sm">itab</code> (interface table) which maps the interface methods to the concrete type&apos;s implementations.</li>
         </ul>
 
         <h4 className="font-bold mt-4 mb-2">"Accept Interfaces, Return Structs"</h4>

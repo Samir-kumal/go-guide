@@ -27,6 +27,7 @@
         "@/components/sections/CodeBreakdown",
         "@/components/sections/EverySingleLineExplained",
         "@/components/sections/SourceCodeRepresentation",
+        "@/components/sections/GoLiteralsTypes",
         "@/components/sections/GetLogFile",
         "@/components/sections/GetLogFileDetailed",
         "@/components/sections/IfInitialization",
@@ -47,7 +48,7 @@
         "@/components/sections/MajorConcepts"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T12:03:01.434Z"
+      "mtime": "2026-04-25T12:43:02.954Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/index.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/index.ts",
@@ -82,10 +83,11 @@
         "Sidebar"
       ],
       "imports": [
+        "react",
         "@/lib/sections"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T11:32:46.414Z"
+      "mtime": "2026-04-25T13:26:15.317Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/CodeBreakdown.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/CodeBreakdown.tsx",
@@ -126,7 +128,7 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T21:45:15.573Z"
+      "mtime": "2026-04-25T13:25:08.879Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Defer.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Defer.tsx",
@@ -186,7 +188,7 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T21:38:37.366Z"
+      "mtime": "2026-04-25T13:25:22.822Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GetLogFileDetailed.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GetLogFileDetailed.tsx",
@@ -198,7 +200,29 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T21:38:57.853Z"
+      "mtime": "2026-04-25T13:25:45.716Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GoLiteralsTypes.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GoLiteralsTypes.tsx",
+      "moduleName": "components/sections/GoLiteralsTypes.tsx",
+      "exports": [
+        "FloatingPointLiterals",
+        "ImaginaryLiterals",
+        "RuneLiterals",
+        "StringLiterals",
+        "Constants",
+        "Variables",
+        "Types",
+        "BooleanTypes",
+        "NumericTypes",
+        "StringTypes",
+        "ArrayTypes"
+      ],
+      "imports": [
+        "@/components/ui"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T12:43:26.070Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/HttpHandlerParams.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/HttpHandlerParams.tsx",
@@ -490,7 +514,7 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T21:40:57.724Z"
+      "mtime": "2026-04-25T13:27:03.821Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/QuickComparison.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/QuickComparison.tsx",
@@ -712,7 +736,7 @@
         "react"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T18:23:26.514Z"
+      "mtime": "2026-04-25T13:25:58.565Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/sections.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/sections.ts",
@@ -723,7 +747,7 @@
       ],
       "imports": [],
       "language": "typescript",
-      "mtime": "2026-04-25T12:00:55.704Z"
+      "mtime": "2026-04-25T13:24:58.628Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/next-env.d.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/next-env.d.ts",
@@ -975,9 +999,9 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-25T12:13:07.437Z",
+    "generatedAt": "2026-04-25T13:29:07.595Z",
     "generator": "repo-graph",
-    "nodeCount": 62,
+    "nodeCount": 63,
     "edgeCount": 32
   }
 }
