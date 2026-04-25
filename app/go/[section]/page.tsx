@@ -32,7 +32,7 @@ export default async function GoSectionPage({ params }: Props) {
   const componentName = capitalize(section)
 
   try {
-    const module = await import(`@/components/sections/${componentName}`)
+    const module = await import(`@/components/sections/go/${componentName}`)
     const Component = module[componentName] || module.default
 
     if (!Component) {
