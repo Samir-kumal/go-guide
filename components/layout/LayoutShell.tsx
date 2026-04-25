@@ -1,12 +1,12 @@
 'use client'
 import { useMemo, useState } from 'react'
-import { sections } from '@/lib/sections'
+import { goSections } from '@/lib/sections'
 import { useSidebarScroll } from '@/hooks/useSidebarScroll'
 import { Sidebar } from './Sidebar'
 
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const sectionIds = useMemo(() => sections.map((s) => s.id), [])
+  const sectionIds = useMemo(() => goSections.map((s) => s.id), [])
   const { activeSection, progress } = useSidebarScroll(sectionIds)
 
   return (
@@ -26,7 +26,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
       </header>
 
       <Sidebar 
-        sections={sections} 
+        sections={goSections} 
         activeSection={activeSection} 
         progress={progress} 
         isOpen={isSidebarOpen}
