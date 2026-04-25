@@ -2,6 +2,60 @@
   "schema_version": "1.0.0",
   "workspaceRoot": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide",
   "nodes": {
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/[section]/page.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/[section]/page.tsx",
+      "moduleName": "app/go/[section]/page.tsx",
+      "exports": [
+        "generateMetadata",
+        "async"
+      ],
+      "imports": [
+        "next/navigation",
+        "next",
+        "@/components/sections/go/${componentName}"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:43:01.739Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/page.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/go/page.tsx",
+      "moduleName": "app/go/page.tsx",
+      "exports": [
+        "GoHomePage"
+      ],
+      "imports": [
+        "next/navigation"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:39:30.974Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/[section]/page.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/[section]/page.tsx",
+      "moduleName": "app/laravel/[section]/page.tsx",
+      "exports": [
+        "generateMetadata",
+        "async"
+      ],
+      "imports": [
+        "next/navigation",
+        "next",
+        "@/components/sections/laravel/${componentName}"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:05.104Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/page.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/laravel/page.tsx",
+      "moduleName": "app/laravel/page.tsx",
+      "exports": [
+        "LaravelHomePage"
+      ],
+      "imports": [
+        "next/navigation"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:04.506Z"
+    },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/layout.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/layout.tsx",
       "moduleName": "app/layout.tsx",
@@ -14,7 +68,7 @@
         "@/components/layout/LayoutShell"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T18:30:55.371Z"
+      "mtime": "2026-04-25T13:41:34.683Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/page.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/page.tsx",
@@ -23,32 +77,52 @@
         "HomePage"
       ],
       "imports": [
-        "@/components/sections/QuickComparison",
-        "@/components/sections/CodeBreakdown",
-        "@/components/sections/EverySingleLineExplained",
-        "@/components/sections/SourceCodeRepresentation",
-        "@/components/sections/GoLiteralsTypes",
-        "@/components/sections/GetLogFile",
-        "@/components/sections/GetLogFileDetailed",
-        "@/components/sections/IfInitialization",
-        "@/components/sections/WhyNoError",
-        "@/components/sections/Pointers",
-        "@/components/sections/ErrorHandling",
-        "@/components/sections/Defer",
-        "@/components/sections/Structs",
-        "@/components/sections/Interfaces",
-        "@/components/sections/ConcurrencyDemo",
-        "@/components/sections/SqlBasics",
-        "@/components/sections/Sqlc",
-        "@/components/sections/Transactions",
-        "@/components/sections/LearningPath",
-        "@/components/sections/Resources",
-        "@/components/sections/EnvironmentValidation",
-        "@/components/sections/HttpHandlerParams",
-        "@/components/sections/MajorConcepts"
+        "next/link",
+        "@/lib/languages"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T12:43:02.954Z"
+      "mtime": "2026-04-25T13:41:34.682Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/[section]/page.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/[section]/page.tsx",
+      "moduleName": "app/php/[section]/page.tsx",
+      "exports": [
+        "generateMetadata",
+        "async"
+      ],
+      "imports": [
+        "next/navigation",
+        "next",
+        "@/components/sections/php/${componentName}"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:16.068Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/page.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/app/php/page.tsx",
+      "moduleName": "app/php/page.tsx",
+      "exports": [
+        "PhpHomePage"
+      ],
+      "imports": [
+        "next/navigation"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:05.284Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/docs/LanguageNav.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/docs/LanguageNav.tsx",
+      "moduleName": "components/docs/LanguageNav.tsx",
+      "exports": [
+        "LanguageNav"
+      ],
+      "imports": [
+        "next/link",
+        "next/navigation",
+        "@/lib/languages"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:41:59.479Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/index.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/index.ts",
@@ -74,7 +148,7 @@
         "./Sidebar"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T11:36:17.661Z"
+      "mtime": "2026-04-25T13:44:46.092Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/Sidebar.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/layout/Sidebar.tsx",
@@ -87,11 +161,11 @@
         "@/lib/sections"
       ],
       "language": "typescript",
-      "mtime": "2026-04-25T13:26:15.317Z"
+      "mtime": "2026-04-25T13:34:57.525Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/CodeBreakdown.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/CodeBreakdown.tsx",
-      "moduleName": "components/sections/CodeBreakdown.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/CodeBreakdown.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/CodeBreakdown.tsx",
+      "moduleName": "components/sections/go/CodeBreakdown.tsx",
       "exports": [
         "CodeBreakdown"
       ],
@@ -106,9 +180,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:36:58.742Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ConcurrencyDemo.test.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ConcurrencyDemo.test.tsx",
-      "moduleName": "components/sections/ConcurrencyDemo.test.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ConcurrencyDemo.test.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ConcurrencyDemo.test.tsx",
+      "moduleName": "components/sections/go/ConcurrencyDemo.test.tsx",
       "exports": [],
       "imports": [
         "@testing-library/react",
@@ -117,9 +191,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:44:19.995Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ConcurrencyDemo.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ConcurrencyDemo.tsx",
-      "moduleName": "components/sections/ConcurrencyDemo.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ConcurrencyDemo.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ConcurrencyDemo.tsx",
+      "moduleName": "components/sections/go/ConcurrencyDemo.tsx",
       "exports": [
         "ConcurrencyDemo"
       ],
@@ -130,9 +204,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:25:08.879Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Defer.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Defer.tsx",
-      "moduleName": "components/sections/Defer.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Defer.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Defer.tsx",
+      "moduleName": "components/sections/go/Defer.tsx",
       "exports": [
         "Defer"
       ],
@@ -142,9 +216,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:41:19.879Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/EnvironmentValidation.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/EnvironmentValidation.tsx",
-      "moduleName": "components/sections/EnvironmentValidation.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/EnvironmentValidation.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/EnvironmentValidation.tsx",
+      "moduleName": "components/sections/go/EnvironmentValidation.tsx",
       "exports": [
         "EnvironmentValidation"
       ],
@@ -154,9 +228,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:49:49.257Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ErrorHandling.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ErrorHandling.tsx",
-      "moduleName": "components/sections/ErrorHandling.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ErrorHandling.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ErrorHandling.tsx",
+      "moduleName": "components/sections/go/ErrorHandling.tsx",
       "exports": [
         "ErrorHandling"
       ],
@@ -166,9 +240,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:41:03.056Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/EverySingleLineExplained.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/EverySingleLineExplained.tsx",
-      "moduleName": "components/sections/EverySingleLineExplained.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/EverySingleLineExplained.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/EverySingleLineExplained.tsx",
+      "moduleName": "components/sections/go/EverySingleLineExplained.tsx",
       "exports": [
         "EverySingleLineExplained"
       ],
@@ -178,9 +252,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T12:11:02.149Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GetLogFile.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GetLogFile.tsx",
-      "moduleName": "components/sections/GetLogFile.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/GetLogFile.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/GetLogFile.tsx",
+      "moduleName": "components/sections/go/GetLogFile.tsx",
       "exports": [
         "GetLogFile"
       ],
@@ -190,9 +264,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:25:22.822Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GetLogFileDetailed.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GetLogFileDetailed.tsx",
-      "moduleName": "components/sections/GetLogFileDetailed.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/GetLogFileDetailed.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/GetLogFileDetailed.tsx",
+      "moduleName": "components/sections/go/GetLogFileDetailed.tsx",
       "exports": [
         "GetLogFileDetailed"
       ],
@@ -202,9 +276,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:25:45.716Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GoLiteralsTypes.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/GoLiteralsTypes.tsx",
-      "moduleName": "components/sections/GoLiteralsTypes.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/GoLiteralsTypes.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/GoLiteralsTypes.tsx",
+      "moduleName": "components/sections/go/GoLiteralsTypes.tsx",
       "exports": [
         "FloatingPointLiterals",
         "ImaginaryLiterals",
@@ -224,9 +298,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T12:43:26.070Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/HttpHandlerParams.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/HttpHandlerParams.tsx",
-      "moduleName": "components/sections/HttpHandlerParams.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/HttpHandlerParams.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/HttpHandlerParams.tsx",
+      "moduleName": "components/sections/go/HttpHandlerParams.tsx",
       "exports": [
         "HttpHandlerParams"
       ],
@@ -236,9 +310,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:49:57.680Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/IfInitialization.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/IfInitialization.tsx",
-      "moduleName": "components/sections/IfInitialization.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/IfInitialization.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/IfInitialization.tsx",
+      "moduleName": "components/sections/go/IfInitialization.tsx",
       "exports": [
         "IfInitialization"
       ],
@@ -248,9 +322,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:39:10.862Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Interfaces.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Interfaces.tsx",
-      "moduleName": "components/sections/Interfaces.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Interfaces.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Interfaces.tsx",
+      "moduleName": "components/sections/go/Interfaces.tsx",
       "exports": [
         "Interfaces"
       ],
@@ -260,9 +334,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:41:27.164Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/LearningPath.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/LearningPath.tsx",
-      "moduleName": "components/sections/LearningPath.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/LearningPath.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/LearningPath.tsx",
+      "moduleName": "components/sections/go/LearningPath.tsx",
       "exports": [
         "LearningPath"
       ],
@@ -272,9 +346,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:49:35.573Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/AdvancedConcurrency.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/AdvancedConcurrency.tsx",
-      "moduleName": "components/sections/major/AdvancedConcurrency.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/AdvancedConcurrency.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/AdvancedConcurrency.tsx",
+      "moduleName": "components/sections/go/major/AdvancedConcurrency.tsx",
       "exports": [
         "AdvancedConcurrency"
       ],
@@ -284,9 +358,9 @@
       "language": "typescript",
       "mtime": "2026-04-19T19:37:33.368Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ArchitectureLayout.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ArchitectureLayout.tsx",
-      "moduleName": "components/sections/major/ArchitectureLayout.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ArchitectureLayout.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ArchitectureLayout.tsx",
+      "moduleName": "components/sections/go/major/ArchitectureLayout.tsx",
       "exports": [
         "ArchitectureLayout"
       ],
@@ -296,9 +370,9 @@
       "language": "typescript",
       "mtime": "2026-04-19T19:37:39.378Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Channels.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Channels.tsx",
-      "moduleName": "components/sections/major/Channels.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Channels.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Channels.tsx",
+      "moduleName": "components/sections/go/major/Channels.tsx",
       "exports": [
         "Channels"
       ],
@@ -306,11 +380,11 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T21:55:30.332Z"
+      "mtime": "2026-04-25T13:33:27.703Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ContextSection.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ContextSection.tsx",
-      "moduleName": "components/sections/major/ContextSection.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ContextSection.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ContextSection.tsx",
+      "moduleName": "components/sections/go/major/ContextSection.tsx",
       "exports": [
         "ContextSection"
       ],
@@ -320,9 +394,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:26:56.992Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/DeferPanicRecover.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/DeferPanicRecover.tsx",
-      "moduleName": "components/sections/major/DeferPanicRecover.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/DeferPanicRecover.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/DeferPanicRecover.tsx",
+      "moduleName": "components/sections/go/major/DeferPanicRecover.tsx",
       "exports": [
         "DeferPanicRecover"
       ],
@@ -332,9 +406,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:56:58.853Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ErrorHandlingDeep.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ErrorHandlingDeep.tsx",
-      "moduleName": "components/sections/major/ErrorHandlingDeep.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ErrorHandlingDeep.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ErrorHandlingDeep.tsx",
+      "moduleName": "components/sections/go/major/ErrorHandlingDeep.tsx",
       "exports": [
         "ErrorHandlingDeep"
       ],
@@ -344,9 +418,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:26:43.483Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Generics.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Generics.tsx",
-      "moduleName": "components/sections/major/Generics.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Generics.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Generics.tsx",
+      "moduleName": "components/sections/go/major/Generics.tsx",
       "exports": [
         "Generics"
       ],
@@ -356,9 +430,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:19:04.771Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Goroutines.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Goroutines.tsx",
-      "moduleName": "components/sections/major/Goroutines.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Goroutines.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Goroutines.tsx",
+      "moduleName": "components/sections/go/major/Goroutines.tsx",
       "exports": [
         "Goroutines"
       ],
@@ -368,9 +442,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:55:22.982Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/InterfacesConcept.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/InterfacesConcept.tsx",
-      "moduleName": "components/sections/major/InterfacesConcept.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/InterfacesConcept.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/InterfacesConcept.tsx",
+      "moduleName": "components/sections/go/major/InterfacesConcept.tsx",
       "exports": [
         "InterfacesConcept"
       ],
@@ -378,11 +452,11 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T22:26:23.919Z"
+      "mtime": "2026-04-25T13:33:03.823Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/MemoryManagement.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/MemoryManagement.tsx",
-      "moduleName": "components/sections/major/MemoryManagement.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/MemoryManagement.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/MemoryManagement.tsx",
+      "moduleName": "components/sections/go/major/MemoryManagement.tsx",
       "exports": [
         "MemoryManagement"
       ],
@@ -392,9 +466,9 @@
       "language": "typescript",
       "mtime": "2026-04-19T19:37:27.743Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Modules.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Modules.tsx",
-      "moduleName": "components/sections/major/Modules.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Modules.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Modules.tsx",
+      "moduleName": "components/sections/go/major/Modules.tsx",
       "exports": [
         "Modules"
       ],
@@ -404,9 +478,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:18:57.640Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ProfilingObservability.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ProfilingObservability.tsx",
-      "moduleName": "components/sections/major/ProfilingObservability.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ProfilingObservability.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ProfilingObservability.tsx",
+      "moduleName": "components/sections/go/major/ProfilingObservability.tsx",
       "exports": [
         "ProfilingObservability"
       ],
@@ -416,9 +490,9 @@
       "language": "typescript",
       "mtime": "2026-04-19T19:37:45.582Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SlicesAndMaps.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SlicesAndMaps.tsx",
-      "moduleName": "components/sections/major/SlicesAndMaps.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SlicesAndMaps.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SlicesAndMaps.tsx",
+      "moduleName": "components/sections/go/major/SlicesAndMaps.tsx",
       "exports": [
         "SlicesAndMaps"
       ],
@@ -428,9 +502,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:13:08.686Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/StructsAndTags.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/StructsAndTags.tsx",
-      "moduleName": "components/sections/major/StructsAndTags.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/StructsAndTags.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/StructsAndTags.tsx",
+      "moduleName": "components/sections/go/major/StructsAndTags.tsx",
       "exports": [
         "StructsAndTags"
       ],
@@ -440,9 +514,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:57:19.951Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SummaryTable.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SummaryTable.tsx",
-      "moduleName": "components/sections/major/SummaryTable.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SummaryTable.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SummaryTable.tsx",
+      "moduleName": "components/sections/go/major/SummaryTable.tsx",
       "exports": [
         "SummaryTable"
       ],
@@ -452,9 +526,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:57:29.701Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SyncPackage.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SyncPackage.tsx",
-      "moduleName": "components/sections/major/SyncPackage.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SyncPackage.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SyncPackage.tsx",
+      "moduleName": "components/sections/go/major/SyncPackage.tsx",
       "exports": [
         "SyncPackage"
       ],
@@ -462,11 +536,11 @@
         "@/components/ui"
       ],
       "language": "typescript",
-      "mtime": "2026-04-18T21:57:05.642Z"
+      "mtime": "2026-04-25T13:33:46.865Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Testing.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Testing.tsx",
-      "moduleName": "components/sections/major/Testing.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Testing.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Testing.tsx",
+      "moduleName": "components/sections/go/major/Testing.tsx",
       "exports": [
         "Testing"
       ],
@@ -476,9 +550,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:18:48.850Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "moduleName": "components/sections/MajorConcepts.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "moduleName": "components/sections/go/MajorConcepts.tsx",
       "exports": [
         "MajorConcepts"
       ],
@@ -504,9 +578,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T22:33:35.038Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Pointers.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Pointers.tsx",
-      "moduleName": "components/sections/Pointers.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Pointers.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Pointers.tsx",
+      "moduleName": "components/sections/go/Pointers.tsx",
       "exports": [
         "Pointers"
       ],
@@ -516,9 +590,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:27:03.821Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/QuickComparison.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/QuickComparison.tsx",
-      "moduleName": "components/sections/QuickComparison.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/QuickComparison.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/QuickComparison.tsx",
+      "moduleName": "components/sections/go/QuickComparison.tsx",
       "exports": [
         "QuickComparison"
       ],
@@ -528,9 +602,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:36:46.520Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Resources.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Resources.tsx",
-      "moduleName": "components/sections/Resources.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Resources.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Resources.tsx",
+      "moduleName": "components/sections/go/Resources.tsx",
       "exports": [
         "Resources"
       ],
@@ -540,9 +614,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:49:41.171Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/SourceCodeRepresentation.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/SourceCodeRepresentation.tsx",
-      "moduleName": "components/sections/SourceCodeRepresentation.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/SourceCodeRepresentation.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/SourceCodeRepresentation.tsx",
+      "moduleName": "components/sections/go/SourceCodeRepresentation.tsx",
       "exports": [
         "SourceCodeRepresentation"
       ],
@@ -552,9 +626,9 @@
       "language": "typescript",
       "mtime": "2026-04-25T12:13:07.427Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/SqlBasics.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/SqlBasics.tsx",
-      "moduleName": "components/sections/SqlBasics.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/SqlBasics.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/SqlBasics.tsx",
+      "moduleName": "components/sections/go/SqlBasics.tsx",
       "exports": [
         "SqlBasics"
       ],
@@ -564,9 +638,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:47:03.472Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Sqlc.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Sqlc.tsx",
-      "moduleName": "components/sections/Sqlc.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Sqlc.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Sqlc.tsx",
+      "moduleName": "components/sections/go/Sqlc.tsx",
       "exports": [
         "Sqlc"
       ],
@@ -576,9 +650,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:47:20.290Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Structs.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Structs.tsx",
-      "moduleName": "components/sections/Structs.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Structs.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Structs.tsx",
+      "moduleName": "components/sections/go/Structs.tsx",
       "exports": [
         "Structs"
       ],
@@ -588,9 +662,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:41:22.965Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Transactions.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/Transactions.tsx",
-      "moduleName": "components/sections/Transactions.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Transactions.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/Transactions.tsx",
+      "moduleName": "components/sections/go/Transactions.tsx",
       "exports": [
         "Transactions"
       ],
@@ -600,9 +674,9 @@
       "language": "typescript",
       "mtime": "2026-04-18T21:47:30.028Z"
     },
-    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/WhyNoError.tsx": {
-      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/WhyNoError.tsx",
-      "moduleName": "components/sections/WhyNoError.tsx",
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/WhyNoError.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/WhyNoError.tsx",
+      "moduleName": "components/sections/go/WhyNoError.tsx",
       "exports": [
         "WhyNoError"
       ],
@@ -611,6 +685,26 @@
       ],
       "language": "typescript",
       "mtime": "2026-04-18T21:39:27.812Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Routing.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/laravel/Routing.tsx",
+      "moduleName": "components/sections/laravel/Routing.tsx",
+      "exports": [
+        "Routing"
+      ],
+      "imports": [],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:05.110Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/php/Basics.tsx": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/php/Basics.tsx",
+      "moduleName": "components/sections/php/Basics.tsx",
+      "exports": [
+        "Basics"
+      ],
+      "imports": [],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:19.972Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/CodeBlock.test.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/CodeBlock.test.tsx",
@@ -645,7 +739,7 @@
       ],
       "imports": [],
       "language": "typescript",
-      "mtime": "2026-04-18T18:24:38.910Z"
+      "mtime": "2026-04-25T13:35:39.792Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/ComparisonTable.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/ComparisonTable.tsx",
@@ -655,7 +749,7 @@
       ],
       "imports": [],
       "language": "typescript",
-      "mtime": "2026-04-18T18:24:34.797Z"
+      "mtime": "2026-04-25T13:35:27.756Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/DeepDive.tsx": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/ui/DeepDive.tsx",
@@ -738,16 +832,61 @@
       "language": "typescript",
       "mtime": "2026-04-25T13:25:58.565Z"
     },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/content-loader.ts": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/content-loader.ts",
+      "moduleName": "lib/content-loader.ts",
+      "exports": [
+        "getSectionsPath",
+        "loadSection"
+      ],
+      "imports": [
+        "./languages",
+        "@/components/sections/${sectionsPath}/${sectionId}"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:38:27.446Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/languages.ts": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/languages.ts",
+      "moduleName": "lib/languages.ts",
+      "exports": [
+        "LanguageConfig",
+        "languages",
+        "languageList",
+        "isValidLanguage",
+        "getLanguage"
+      ],
+      "imports": [],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:38:46.409Z"
+    },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/sections.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/sections.ts",
       "moduleName": "lib/sections.ts",
       "exports": [
         "SectionEntry",
-        "sections"
+        "goSections",
+        "phpSections",
+        "laravelSections",
+        "allSections",
+        "getSectionsByLanguage"
       ],
       "imports": [],
       "language": "typescript",
-      "mtime": "2026-04-25T13:24:58.628Z"
+      "mtime": "2026-04-25T13:44:21.110Z"
+    },
+    "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/middleware.ts": {
+      "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/middleware.ts",
+      "moduleName": "middleware.ts",
+      "exports": [
+        "middleware",
+        "config"
+      ],
+      "imports": [
+        "next/server"
+      ],
+      "language": "typescript",
+      "mtime": "2026-04-25T13:40:59.035Z"
     },
     "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/next-env.d.ts": {
       "filePath": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/next-env.d.ts",
@@ -830,110 +969,110 @@
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ConcurrencyDemo.test.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/ConcurrencyDemo.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ConcurrencyDemo.test.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/ConcurrencyDemo.tsx",
       "importSpecifier": "./ConcurrencyDemo",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/AdvancedConcurrency.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/AdvancedConcurrency.tsx",
       "importSpecifier": "./major/AdvancedConcurrency",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ArchitectureLayout.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ArchitectureLayout.tsx",
       "importSpecifier": "./major/ArchitectureLayout",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Channels.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Channels.tsx",
       "importSpecifier": "./major/Channels",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ContextSection.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ContextSection.tsx",
       "importSpecifier": "./major/ContextSection",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/DeferPanicRecover.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/DeferPanicRecover.tsx",
       "importSpecifier": "./major/DeferPanicRecover",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ErrorHandlingDeep.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ErrorHandlingDeep.tsx",
       "importSpecifier": "./major/ErrorHandlingDeep",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Generics.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Generics.tsx",
       "importSpecifier": "./major/Generics",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Goroutines.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Goroutines.tsx",
       "importSpecifier": "./major/Goroutines",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/InterfacesConcept.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/InterfacesConcept.tsx",
       "importSpecifier": "./major/InterfacesConcept",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/MemoryManagement.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/MemoryManagement.tsx",
       "importSpecifier": "./major/MemoryManagement",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Modules.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Modules.tsx",
       "importSpecifier": "./major/Modules",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/ProfilingObservability.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/ProfilingObservability.tsx",
       "importSpecifier": "./major/ProfilingObservability",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SlicesAndMaps.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SlicesAndMaps.tsx",
       "importSpecifier": "./major/SlicesAndMaps",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/StructsAndTags.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/StructsAndTags.tsx",
       "importSpecifier": "./major/StructsAndTags",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SummaryTable.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SummaryTable.tsx",
       "importSpecifier": "./major/SummaryTable",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/SyncPackage.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/SyncPackage.tsx",
       "importSpecifier": "./major/SyncPackage",
       "importType": "named"
     },
     {
-      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/MajorConcepts.tsx",
-      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/major/Testing.tsx",
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/MajorConcepts.tsx",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/components/sections/go/major/Testing.tsx",
       "importSpecifier": "./major/Testing",
       "importType": "named"
     },
@@ -992,6 +1131,12 @@
       "importType": "named"
     },
     {
+      "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/content-loader.ts",
+      "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/lib/languages.ts",
+      "importSpecifier": "./languages",
+      "importType": "named"
+    },
+    {
       "source": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/next-env.d.ts",
       "target": "/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide/.next/types/routes.d.ts",
       "importSpecifier": "./.next/types/routes.d.ts",
@@ -999,9 +1144,9 @@
     }
   ],
   "metadata": {
-    "generatedAt": "2026-04-25T13:29:07.595Z",
+    "generatedAt": "2026-04-25T13:44:46.105Z",
     "generator": "repo-graph",
-    "nodeCount": 63,
-    "edgeCount": 32
+    "nodeCount": 75,
+    "edgeCount": 33
   }
 }

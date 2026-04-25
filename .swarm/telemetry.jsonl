@@ -114,3 +114,66 @@
 {"timestamp":"2026-04-25T13:34:06.780Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
 {"timestamp":"2026-04-25T13:34:06.845Z","event":"heartbeat","sessionId":"ses_23b2708abffeuTTw6w5eFpquAr"}
 {"timestamp":"2026-04-25T13:34:28.884Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:36:17.652Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T13:36:17.652Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:36:17.762Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:37:20.675Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:37:42.512Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:37:51.699Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:38:01.320Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","oldName":"​​​​Atlas - Plan Executor"}
+{"timestamp":"2026-04-25T13:38:01.320Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:38:06.735Z","event":"session_started","sessionId":"ses_23b235fc1ffeB0U4n3WelSbGdV","agentName":"coder"}
+{"timestamp":"2026-04-25T13:38:06.735Z","event":"delegation_begin","sessionId":"ses_23b235fc1ffeB0U4n3WelSbGdV","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:38:06.821Z","event":"heartbeat","sessionId":"ses_23b235fc1ffeB0U4n3WelSbGdV"}
+{"timestamp":"2026-04-25T13:38:38.412Z","event":"heartbeat","sessionId":"ses_23b235fc1ffeB0U4n3WelSbGdV"}
+{"timestamp":"2026-04-25T13:38:56.970Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:38:57.459Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:39:21.906Z","event":"session_started","sessionId":"ses_23b223a1fffeGGi0HwhUgOnnq3","agentName":"coder"}
+{"timestamp":"2026-04-25T13:39:21.906Z","event":"delegation_begin","sessionId":"ses_23b223a1fffeGGi0HwhUgOnnq3","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:39:21.995Z","event":"heartbeat","sessionId":"ses_23b223a1fffeGGi0HwhUgOnnq3"}
+{"timestamp":"2026-04-25T13:39:44.004Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:39:44.573Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:39:55.724Z","event":"session_started","sessionId":"ses_23b21b603ffemHd3Qm8wECYWUi","agentName":"coder"}
+{"timestamp":"2026-04-25T13:39:55.724Z","event":"delegation_begin","sessionId":"ses_23b21b603ffemHd3Qm8wECYWUi","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:39:55.731Z","event":"session_started","sessionId":"ses_23b21b602ffeo0s0qUCTwl15dg","agentName":"coder"}
+{"timestamp":"2026-04-25T13:39:55.731Z","event":"delegation_begin","sessionId":"ses_23b21b602ffeo0s0qUCTwl15dg","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:39:55.803Z","event":"heartbeat","sessionId":"ses_23b21b603ffemHd3Qm8wECYWUi"}
+{"timestamp":"2026-04-25T13:39:55.855Z","event":"heartbeat","sessionId":"ses_23b21b602ffeo0s0qUCTwl15dg"}
+{"timestamp":"2026-04-25T13:40:20.014Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/syntax_check/evidence.json","agent":"evidence-manager","taskId":"syntax_check","attempt":0}
+{"timestamp":"2026-04-25T13:40:22.623Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/syntax_check/evidence.json","agent":"evidence-manager","taskId":"syntax_check","attempt":0}
+{"timestamp":"2026-04-25T13:40:23.677Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/build/evidence.json","agent":"evidence-manager","taskId":"build","attempt":0}
+{"timestamp":"2026-04-25T13:40:27.046Z","event":"heartbeat","sessionId":"ses_23b21b603ffemHd3Qm8wECYWUi"}
+{"timestamp":"2026-04-25T13:40:27.818Z","event":"heartbeat","sessionId":"ses_23b21b602ffeo0s0qUCTwl15dg"}
+{"timestamp":"2026-04-25T13:40:31.878Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:40:37.888Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:40:38.498Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:40:46.594Z","event":"session_started","sessionId":"ses_23b20ef4bffePktMUKZOYWguaM","agentName":"coder"}
+{"timestamp":"2026-04-25T13:40:46.594Z","event":"delegation_begin","sessionId":"ses_23b20ef4bffePktMUKZOYWguaM","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:40:46.673Z","event":"heartbeat","sessionId":"ses_23b20ef4bffePktMUKZOYWguaM"}
+{"timestamp":"2026-04-25T13:41:02.071Z","event":"evidence_lock_acquired","directory":"/Users/samirkumal/Documents/Personal/Collab/Learning/go-guide","evidencePath":"evidence/syntax_check/evidence.json","agent":"evidence-manager","taskId":"syntax_check","attempt":0}
+{"timestamp":"2026-04-25T13:41:11.753Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:41:12.404Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:41:22.139Z","event":"session_started","sessionId":"ses_23b206475ffeVGVCjj3OGE2uAl","agentName":"coder"}
+{"timestamp":"2026-04-25T13:41:22.139Z","event":"delegation_begin","sessionId":"ses_23b206475ffeVGVCjj3OGE2uAl","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:41:22.248Z","event":"heartbeat","sessionId":"ses_23b206475ffeVGVCjj3OGE2uAl"}
+{"timestamp":"2026-04-25T13:41:55.982Z","event":"heartbeat","sessionId":"ses_23b206475ffeVGVCjj3OGE2uAl"}
+{"timestamp":"2026-04-25T13:42:12.332Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:42:12.998Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:42:25.449Z","event":"session_started","sessionId":"ses_23b1f6d26ffePsYUpGzPiG19ZC","agentName":"coder"}
+{"timestamp":"2026-04-25T13:42:25.449Z","event":"delegation_begin","sessionId":"ses_23b1f6d26ffePsYUpGzPiG19ZC","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:42:25.537Z","event":"heartbeat","sessionId":"ses_23b1f6d26ffePsYUpGzPiG19ZC"}
+{"timestamp":"2026-04-25T13:42:56.653Z","event":"heartbeat","sessionId":"ses_23b1f6d26ffePsYUpGzPiG19ZC"}
+{"timestamp":"2026-04-25T13:43:31.322Z","event":"heartbeat","sessionId":"ses_23b1f6d26ffePsYUpGzPiG19ZC"}
+{"timestamp":"2026-04-25T13:43:58.838Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:43:59.541Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:44:08.085Z","event":"session_started","sessionId":"ses_23b1ddc3affepUnrBN5JxAdbP1","agentName":"coder"}
+{"timestamp":"2026-04-25T13:44:08.085Z","event":"delegation_begin","sessionId":"ses_23b1ddc3affepUnrBN5JxAdbP1","agentName":"coder","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:44:08.162Z","event":"heartbeat","sessionId":"ses_23b1ddc3affepUnrBN5JxAdbP1"}
+{"timestamp":"2026-04-25T13:44:38.582Z","event":"heartbeat","sessionId":"ses_23b1ddc3affepUnrBN5JxAdbP1"}
+{"timestamp":"2026-04-25T13:45:02.310Z","event":"delegation_end","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"architect","taskId":"","result":"completed"}
+{"timestamp":"2026-04-25T13:45:03.088Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:45:10.282Z","event":"agent_activated","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","oldName":"architect"}
+{"timestamp":"2026-04-25T13:45:10.282Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:45:35.641Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
+{"timestamp":"2026-04-25T13:45:56.006Z","event":"delegation_begin","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ","agentName":"​​​​Atlas - Plan Executor","taskId":"unknown"}
+{"timestamp":"2026-04-25T13:46:06.133Z","event":"heartbeat","sessionId":"ses_23b272c6dffeaVHgi8QxValYpZ"}
