@@ -1,6 +1,6 @@
 import { Goroutines } from './major/Goroutines'
 import { Channels } from './major/Channels'
-import { InterfacesConcept } from './major/InterfacesConcept'
+import { InterfacesTutorial } from './major/InterfacesTutorial'
 import { ErrorHandlingDeep } from './major/ErrorHandlingDeep'
 import { DeferPanicRecover } from './major/DeferPanicRecover'
 import { SyncPackage } from './major/SyncPackage'
@@ -24,7 +24,7 @@ export function MajorConcepts() {
       </h2>
       <Goroutines />
       <Channels />
-      <InterfacesConcept />
+      <InterfacesTutorial />
       <ErrorHandlingDeep />
       <DeferPanicRecover />
       <SyncPackage />
