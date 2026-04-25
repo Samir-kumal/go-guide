@@ -1,6 +1,8 @@
+'use client'
+
 import { CodeBlock, Note, DeepDive } from '@/components/ui'
 
-export function InterfacesConcept() {
+export function InterfacesTutorial() {
   return (
     <div>
       <h3 id="interfaces-defining-behavior" className="text-[#5f6368] text-xl font-semibold mt-6">
