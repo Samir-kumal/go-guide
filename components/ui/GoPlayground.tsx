@@ -69,12 +69,19 @@ export function GoPlayground({ isOpen, onClose }: Props) {
         }`}
       />
 
-      {/* Sheet */}
+      {/* Sheet
+          Mobile  (<sm): full-screen bottom sheet — slides up from bottom
+          Desktop (sm+): right-side panel — slides in from right, 45% wide (min 480 px)
+      */}
       <div
         data-testid="playground-sheet"
-        className={`fixed top-0 right-0 h-full w-[45%] min-w-[480px] bg-[var(--code-bg)] z-50 flex flex-col shadow-2xl transition-transform duration-300 ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed bg-[var(--code-bg)] z-50 flex flex-col shadow-2xl transition-transform duration-300
+          bottom-0 left-0 right-0 h-[92dvh] rounded-t-2xl
+          sm:top-0 sm:bottom-auto sm:left-auto sm:right-0 sm:h-full sm:w-[45%] sm:min-w-[480px] sm:rounded-none
+          ${isOpen
+            ? 'translate-y-0 sm:translate-y-0 sm:translate-x-0'
+            : 'translate-y-full sm:translate-y-0 sm:translate-x-full'
+          }`}
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 bg-[var(--code-header)] border-b border-slate-800/50 shrink-0">
@@ -82,10 +89,11 @@ export function GoPlayground({ isOpen, onClose }: Props) {
             <span className="text-emerald-400">▶</span>
             <span className="font-bold text-slate-200 tracking-tight">Go Playground</span>
           </div>
+          {/* Larger touch target on mobile */}
           <button
             onClick={onClose}
             aria-label="Close playground"
-            className="text-slate-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer text-2xl leading-none px-1"
+            className="text-slate-400 hover:text-white transition-colors bg-transparent border-none cursor-pointer text-2xl leading-none p-2 -mr-1 min-w-[44px] min-h-[44px] flex items-center justify-center"
           >
             ×
           </button>
@@ -108,7 +116,7 @@ export function GoPlayground({ isOpen, onClose }: Props) {
             onClick={handleRun}
             disabled={status === 'running'}
             aria-label="Run"
-            className="w-full py-2.5 rounded-xl bg-[var(--primary)] text-white text-sm font-bold tracking-widest uppercase transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed hover:opacity-90 border-none"
+            className="w-full py-3 sm:py-2.5 rounded-xl bg-[var(--primary)] text-white text-sm font-bold tracking-widest uppercase transition-opacity disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed hover:opacity-90 border-none min-h-[44px]"
           >
             {status === 'running' ? '⟳ Running...' : '▶ Run'}
           </button>

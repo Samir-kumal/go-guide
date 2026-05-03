@@ -58,27 +58,31 @@ export default function GoGuidePage() {
         </Link>
       </section>
 
-      {/* Interactive Learning Banner */}
-      <section className="bg-gradient-to-r from-[var(--primary)] to-[var(--accent-cyan)] rounded-3xl p-8 flex items-center gap-6 shadow-2xl shadow-indigo-500/20 dark:shadow-none transition-all">
-        <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center flex-shrink-0 border border-white/30 shadow-lg">
-          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      {/* Interactive Learning Banner
+          Mobile : stacks icon above text (flex-col), tighter padding
+          Tablet+: side-by-side (flex-row)
+      */}
+      <section className="bg-gradient-to-r from-[var(--primary)] to-[var(--accent-cyan)] rounded-3xl p-5 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 shadow-2xl shadow-indigo-500/20 dark:shadow-none transition-all">
+        <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center shrink-0 border border-white/30 shadow-lg">
+          <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
           </svg>
         </div>
-        <div className="flex-1">
-          <h3 className="text-white text-xl font-black mb-1 tracking-tight">Interactive Learning</h3>
-          <p className="text-white/80 dark:text-slate-200 text-sm mb-5 max-w-lg font-medium">
-            Master Go faster by running examples directly in your browser. 
+        <div className="flex-1 min-w-0">
+          <h3 className="text-white text-lg sm:text-xl font-black mb-1 tracking-tight">Interactive Learning</h3>
+          <p className="text-white/80 dark:text-slate-200 text-sm mb-4 sm:mb-5 max-w-lg font-medium">
+            Master Go faster by running examples directly in your browser.
             Test your knowledge with live code snippets.
           </p>
-          <a href="https://go.dev/play" target="_blank" className="inline-flex items-center gap-2 px-7 py-3 bg-white text-[var(--primary)] rounded-xl font-black text-xs uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all no-underline hover:scale-105 active:scale-95">
+          <a href="https://go.dev/play" target="_blank" className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 bg-white text-[var(--primary)] rounded-xl font-black text-xs uppercase tracking-widest shadow-xl hover:shadow-2xl transition-all no-underline hover:scale-105 active:scale-95">
             Launch Playground
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
           </a>
         </div>
       </section>
 
-      <div className="space-y-24 pb-20">
+      {/* Section spacing: tighter on mobile to reduce excessive whitespace */}
+      <div className="space-y-16 sm:space-y-20 lg:space-y-24 pb-20">
         <QuickComparison />
         <CodeBreakdown />
         <EverySingleLineExplained />
