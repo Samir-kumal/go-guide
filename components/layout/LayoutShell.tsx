@@ -48,7 +48,8 @@ export function LayoutShell({ children, sections }: Props) {
           </nav>
         </div>
 
-        <div className="flex items-center gap-1 sm:gap-3">
+        {/* shrink-0 prevents the right controls from being compressed by a wide logo/nav on small screens */}
+        <div className="flex items-center gap-1 sm:gap-3 shrink-0">
           {/* 44px min tap target on mobile */}
           <button className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

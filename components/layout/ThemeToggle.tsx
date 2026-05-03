@@ -13,7 +13,8 @@ export function ThemeToggle() {
   }, [])
 
   if (!mounted) {
-    return <div className="w-9 h-9" />
+    // Placeholder matches rendered button size to avoid layout shift
+    return <div className="min-w-[44px] min-h-[44px]" />
   }
 
   const toggleTheme = () => {
@@ -23,8 +24,8 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors bg-transparent border-none cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
       aria-label="Toggle theme"
+      className="min-w-[44px] min-h-[44px] flex items-center justify-center shrink-0 p-2 text-[var(--text-secondary)] hover:text-[var(--primary)] dark:text-slate-400 dark:hover:text-white transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800"
     >
       {resolvedTheme === 'dark' ? (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
