@@ -25,14 +25,19 @@ export function LayoutShell({ children, sections }: Props) {
 
   return (
     <div className="min-h-screen bg-[var(--bg-page)] transition-colors duration-300">
-      {/* Top Navigation Bar */}
-      <header className="fixed top-0 left-0 right-0 h-[var(--nav-h)] bg-[var(--bg-sidebar)] dark:bg-[#0f172a] border-b border-slate-200/60 dark:border-[#1e293b] flex items-center justify-between px-8 z-[100] transition-colors duration-300 shadow-sm shadow-indigo-500/5">
-        <div className="flex items-center gap-10">
-          <Link href="/" className="flex items-center gap-3 no-underline group">
-            <div className="w-9 h-9 bg-[var(--primary)] rounded-xl flex items-center justify-center font-black text-white shadow-xl shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+      {/* Top Navigation Bar
+          Mobile : px-4, logo text hidden on xs to save space
+          Tablet+: px-6
+          Desktop: px-8, section nav links visible at xl
+      */}
+      <header className="fixed top-0 left-0 right-0 h-[var(--nav-h)] bg-[var(--bg-sidebar)] dark:bg-[#0f172a] border-b border-slate-200/60 dark:border-[#1e293b] flex items-center justify-between px-4 sm:px-6 md:px-8 z-[100] transition-colors duration-300 shadow-sm shadow-indigo-500/5">
+        <div className="flex items-center gap-3 lg:gap-10">
+          <Link href="/" className="flex items-center gap-2.5 no-underline group">
+            <div className="w-9 h-9 bg-[var(--primary)] rounded-xl flex items-center justify-center font-black text-white shadow-xl shadow-indigo-500/30 group-hover:scale-105 transition-transform shrink-0">
               G
             </div>
-            <span className="font-black tracking-tight text-[var(--text-primary)] text-xl">GoCode</span>
+            {/* Hide text on very small screens to avoid header overflow */}
+            <span className="hidden xs:inline font-black tracking-tight text-[var(--text-primary)] text-xl">GoCode</span>
           </Link>
 
           <nav className="hidden xl:flex items-center gap-8">
@@ -43,18 +48,20 @@ export function LayoutShell({ children, sections }: Props) {
           </nav>
         </div>
 
-        <div className="flex items-center gap-3">
-          <button className="p-2.5 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800">
+        <div className="flex items-center gap-1 sm:gap-3">
+          {/* 44px min tap target on mobile */}
+          <button className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </button>
-          
+
           <ThemeToggle />
 
-          <button 
+          <button
             onClick={() => setIsSidebarOpen(true)}
-            className="lg:hidden p-2.5 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800"
+            aria-label="Open navigation"
+            className="lg:hidden p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 6h16M4 12h16m-7 6h7" />
@@ -64,16 +71,21 @@ export function LayoutShell({ children, sections }: Props) {
       </header>
 
       <div className="flex pt-[var(--nav-h)]">
-        <Sidebar 
-          sections={sections} 
-          activeSection={activeSection || `#${pathname.split('/').pop()}`} 
-          progress={progress} 
+        <Sidebar
+          sections={sections}
+          activeSection={activeSection || `#${pathname.split('/').pop()}`}
+          progress={progress}
           isOpen={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}
         />
-        
+
+        {/* Content area
+            Mobile : full-width, px-4 — no sidebar margin
+            Tablet : px-6
+            Desktop: sidebar offset, px-8 → px-16
+        */}
         <main className="flex-1 lg:ml-[var(--sidebar-w)] min-w-0">
-          <div className="max-w-[1000px] mx-auto px-10 lg:px-16 py-16">
+          <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 py-8 sm:py-12 lg:py-16">
             {children}
           </div>
         </main>
