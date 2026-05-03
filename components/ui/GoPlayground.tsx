@@ -79,7 +79,7 @@ export function GoPlayground({ isOpen, onClose }: Props) {
           bottom-0 left-0 right-0 h-[92dvh] rounded-t-2xl
           sm:top-0 sm:bottom-auto sm:left-auto sm:right-0 sm:h-full sm:w-[45%] sm:min-w-[480px] sm:rounded-none
           ${isOpen
-            ? 'translate-y-0 sm:translate-y-0 sm:translate-x-0'
+            ? 'translate-y-0 sm:translate-x-0'
             : 'translate-y-full sm:translate-y-0 sm:translate-x-full'
           }`}
       >
