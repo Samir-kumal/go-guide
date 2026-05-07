@@ -2,9 +2,6 @@
 
 @variant dark (&:where(.dark, .dark *));
 
-/* Custom xs breakpoint (375 px) for very small phone screens */
-@custom-variant xs (@media (width >= 375px));
-
 :root {
   --sidebar-w: 260px;
   --nav-h: 64px;

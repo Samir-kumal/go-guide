@@ -31,13 +31,15 @@ export function LayoutShell({ children, sections }: Props) {
           Desktop: px-8, section nav links visible at xl
       */}
       <header className="fixed top-0 left-0 right-0 h-[var(--nav-h)] bg-[var(--bg-sidebar)] dark:bg-[#0f172a] border-b border-slate-200/60 dark:border-[#1e293b] flex items-center justify-between px-4 sm:px-6 md:px-8 z-[100] transition-colors duration-300 shadow-sm shadow-indigo-500/5">
-        <div className="flex items-center gap-3 lg:gap-10">
-          <Link href="/" className="flex items-center gap-2.5 no-underline group">
+        {/* Left: logo + desktop nav links
+            min-w-0 lets this side compress instead of pushing right controls off-screen */}
+        <div className="flex items-center gap-3 lg:gap-10 min-w-0">
+          <Link href="/" className="flex items-center gap-2.5 no-underline group shrink-0">
             <div className="w-9 h-9 bg-[var(--primary)] rounded-xl flex items-center justify-center font-black text-white shadow-xl shadow-indigo-500/30 group-hover:scale-105 transition-transform shrink-0">
               G
             </div>
-            {/* Hide text on very small screens to avoid header overflow */}
-            <span className="hidden xs:inline font-black tracking-tight text-[var(--text-primary)] text-xl">GoCode</span>
+            {/* Logo text: hidden on mobile (<sm), visible on sm+ to avoid crowding the right buttons */}
+            <span className="hidden sm:inline font-black tracking-tight text-[var(--text-primary)] text-xl">GoCode</span>
           </Link>
 
           <nav className="hidden xl:flex items-center gap-8">
@@ -48,10 +50,10 @@ export function LayoutShell({ children, sections }: Props) {
           </nav>
         </div>
 
-        {/* shrink-0 prevents the right controls from being compressed by a wide logo/nav on small screens */}
-        <div className="flex items-center gap-1 sm:gap-3 shrink-0">
-          {/* 44px min tap target on mobile */}
-          <button className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800">
+        {/* Right: action buttons — shrink-0 keeps this group from being compressed */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Search button — hidden on mobile where space is scarce and it is non-functional */}
+          <button className="hidden sm:flex p-2.5 min-w-[44px] min-h-[44px] items-center justify-center text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors bg-transparent border-none cursor-pointer rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -59,6 +61,7 @@ export function LayoutShell({ children, sections }: Props) {
 
           <ThemeToggle />
 
+          {/* Hamburger — only on mobile/tablet (<lg) */}
           <button
             onClick={() => setIsSidebarOpen(true)}
             aria-label="Open navigation"
